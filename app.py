@@ -14,15 +14,25 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/find_playground')
 def find_playground():
-    return render_template("playground.html", playgrounds = mongo.db.playgrounds.find())
+    return render_template("playground.html", 
+                            playgrounds = mongo.db.playgrounds.find())
     
+# @app.route('/add_playground')
+# def add_playground():
+#     _boroughs = mongo.db.boroughs.find()
+#     borough_list = [borough for borough in _boroughs]
+#     return render_template("addplayground.html", boroughs = borough_list) 
+                            
 @app.route('/add_playground')
 def add_playground():
-    return render_template("addplayground.html", playgrounds = mongo.db.playgrounds.find())
+    return render_template("addplayground.html", 
+                            boroughs = mongo.db.boroughs.find())    
+
     
 @app.route('/show_playground')
 def show_playground():
-    return render_template("showplayground.html", playgrounds = mongo.db.playgrounds.find())
+    return render_template("showplayground.html", 
+                            playgrounds = mongo.db.playgrounds.find())
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
