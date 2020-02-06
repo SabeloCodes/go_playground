@@ -16,14 +16,15 @@
     <div class="carousel-fixed-item center">
       <a class="btn waves-effect white grey-text darken-text-2">button</a>
     </div>
-    <div class="carousel-item" href="#one!">
-      <a><img src="/static/images/carousel/playground-blossom.jpg"></a>
+    <div class="carousel-item">
+      <!--<a><img src="/static/images/carousel/playground-blossom.jpg"></a>-->
+      <a><img href="{{url_for('static', filename='images/carousel/playground-blossom.jpg')}}"></a>
       <p class="white-text">This is your first panel</p>
     </div>
     <div class="carousel-item amber white-text" href="#two!">
-        <a><img src="/static/images/carousel/climbing-frame.jpg"></a>
+        <a><img href="{{url_for('static', filename='images/carousel/climbing-frame.jpg')}}"></a>
       <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
+      <p class="white-text">This is my second panel</p>
     </div>
     <div class="carousel-item green white-text" href="#three!">
       <a><img src="/static/images/carousel/art-swing.jpg"></a>
@@ -42,14 +43,6 @@
     </div>
     
   </div>
-    
-<!--<div class="carousel">-->
-<!--    <a class="carousel-item" href="#one!"><img src="/static/images/carousel/playground-blossom.jpg"></a>-->
-<!--    <a class="carousel-item" href="#two!"><img src="/static/images/carousel/climbing-frame.jpg"></a>-->
-<!--    <a class="carousel-item" href="#three!"><img src="/static/images/carousel/art-swing.jpg"></a>-->
-<!--    <a class="carousel-item" href="#four!"><img src="/static/images/carousel/sandpit-boy.jpg"></a>-->
-<!--    <a class="carousel-item" href="#five!"><img src="/static/images/carousel/horse-ride.jpg"></a>-->
-<!--  </div>-->
   
 </div>
 
