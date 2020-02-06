@@ -1,9 +1,10 @@
 /*==========================INITIALIZE SELECT/CAROUSEL =================================*/
 
-// CAROUSEL
-$('.carousel').carousel({
-  interval: 2000
-});
+$(document).ready(function(){
+      $('.carousel').carousel();
+      interval: 2000
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+    });
 
 
     $('select').formSelect();
