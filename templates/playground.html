@@ -8,46 +8,36 @@
         {{ playground.star_rating }}
         {{ playground.entry_date }}
     {% endfor %}
-
-
-<div class="container">
-    
-      <div class="carousel carousel-slider center" data-indicators="true">
+  
+  <div class="carousel carousel-slider center" data-indicators="true">
     <div class="carousel-fixed-item center">
       <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+      
     </div>
     <div class="carousel-item">
-      <!--<a><img src="/static/images/carousel/playground-blossom.jpg"></a>-->
-      <a><img href="{{url_for('static', filename='images/carousel/playground-blossom.jpg')}}"></a>
-      <p class="white-text">This is your first panel</p>
+      <a><img src="/static/images/carousel/playground-blossom.jpg"></a>
     </div>
-    <div class="carousel-item amber white-text" href="#two!">
-        <a><img href="{{url_for('static', filename='images/carousel/climbing-frame.jpg')}}"></a>
-      <h2>Second Panel</h2>
-      <p class="white-text">This is my second panel</p>
+    <div class="carousel-item" href="#two!">
+        <a><img src="/static/images/carousel/climbing-frame.jpg"></a>
     </div>
-    <div class="carousel-item green white-text" href="#three!">
+    <div class="carousel-item" href="#three!">
       <a><img src="/static/images/carousel/art-swing.jpg"></a>
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
     </div>
-    <div class="carousel-item blue white-text" href="#four!">
+    <div class="carousel-item" href="#four!">
       <a><img src="/static/images/carousel/sandpit-boy.jpg"></a>
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
     </div>
-    <div class="carousel-item blue white-text" href="#four!">
+    <div class="carousel-item" href="#five!">
       <a><img src="/static/images/carousel/horse-ride.jpg"></a>
-      <h2>Fifth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
     </div>
-    
   </div>
-  
-</div>
-
-
-
 
 {% endblock %}
     
