@@ -4,8 +4,8 @@
 $(document).ready(function(){
     $('.carousel .carousel-slider .slider').carousel({
         interval: 4000,
+
     });
-  
 
 /*========================== MAP ==================================*/
 // Initialize and add the map
@@ -18,3 +18,5 @@ function initMap() {
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
+
+    });
