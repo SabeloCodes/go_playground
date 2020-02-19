@@ -7,51 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <script src="https://kit.fontawesome.com/1503525491.js" crossorigin="anonymous"></script>
-    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
 
     <title>Go Playground App</title>
 </head>
 <body>
     
-    <header>
-        <nav>
-            <ul id="slide-out" class="side-nav">
-              <li><a href="#!">First Sidebar Link</a></li>
-              <li><a href="#!">Second Sidebar Link</a></li>
-              <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                  <li>
-                    <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
-                    <div class="collapsible-body">
-                      <ul>
-                        <li><a href="#!">First</a></li>
-                        <li><a href="#!">Second</a></li>
-                        <li><a href="#!">Third</a></li>
-                        <li><a href="#!">Fourth</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#!">First Sidebar Link</a></li>
-              <li><a href="#!">Second Sidebar Link</a></li>
-              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-              <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">First</a></li>
-                <li><a href="#!">Second</a></li>
-                <li><a href="#!">Third</a></li>
-                <li><a href="#!">Fourth</a></li>
-              </ul>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-        </nav>
-    </header>
+  <header>
+    
+  </header>
         
-    </head>
     <div class="container">
         {% block content %} {% endblock %}
     </div>
@@ -63,13 +30,11 @@
     
 <!------------ JS link file path ---------->
     <script src="static/js/main.js"></script>
-
-<!------------- Materialize Compiled and minified JavaScript ------------>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     
-<!------------- Materialize Compiled and minified JavaScript ------------>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-     
+<!------------- Map API Key ------------>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrtnyuIMzH0Mq9wPbOpWFwtNuB-eEbxO0&callback=initMap">
+    </script>
+    
 </body>
 </html>
