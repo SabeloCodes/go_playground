@@ -6,33 +6,33 @@
 <h3>Add Playground</h3>
 
 <div class="container">
-  <div class="row">
+    
     <div class="col-8">
-      <form>
+      <form action="" method="POST">
         <div class="form-group">
           <label for="email2">Playground</label>
-          <input type="text" class="form-control" id="playground_name" aria-describedby="emailHelp" placeholder="Enter playground name">
+          <input type="text" class="form-control" id="playground_name" name="playground_name" aria-describedby="emailHelp" placeholder="Enter playground name">
         </div>
         
         <div class="form-group">
           <label for="borough_name">Borough</label>
-            <select class="custom-select" id="borough_name">
-              <option selected>Choose a borough</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
+            <select class="custom-select" name="borough_name" id="borough_name">
+              <option disabled selected>Choose a borough</option>
+              {% for b in boroughs %}
+                <option value="{{ b.borough_name }}"> {{ b.borough_name }} </option>
+              {% endfor %}
             </select>
         </div>
         
         <div class="form-group">
           <label for="formControlRange">Example Range input</label>
-          <input type="range" class="form-control-range" id="formControlRange" min="0" max="10">
+          <input type="range" class="form-control-range" name="star_rating" id="star_rating" min="0" max="10">
         </div>
 
         
         <div class="form-group">
           <label for="description1">Review</label>
-          <textarea class="form-control" id="playgroundReview" rows="3" placeholder="Write your review here..."></textarea>
+          <textarea class="form-control" name="playground_descreption" id="playground_descreption" rows="3" placeholder="Write your review here..."></textarea>
         </div>
         
         <div class="form-group">
@@ -56,6 +56,5 @@
       </form>
     </div>
   </div>
-</div>
 
 {% endblock %}
