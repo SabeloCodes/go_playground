@@ -26,7 +26,14 @@ def find_playground():
 @app.route('/add_playground')
 def add_playground():
     return render_template("addplayground.html", 
-                            boroughs = mongo.db.boroughs.find())    
+                            boroughs = mongo.db.boroughs.find()) 
+                            
+@app.route('/insert_playground', methods=['POST'])
+def insert_playground():
+    playgrounds = mongo.db.tasks
+    playgrounds.insert_one(request.form.to_dict())
+    return redirect(url_for('show_playground'))                            
+
 
     
 @app.route('/show_playground')

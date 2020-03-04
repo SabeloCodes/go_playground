@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
-
 <h3>Add Playground</h3>
 
 <div class="container">
     
     <div class="col-8">
-      <form action="" method="POST">
+      <form action="{{ url_for('insert_playground') }}" method="POST">
         <div class="form-group">
           <label for="email2">Playground</label>
           <input type="text" class="form-control" id="playground_name" name="playground_name" aria-describedby="emailHelp" placeholder="Enter playground name">
