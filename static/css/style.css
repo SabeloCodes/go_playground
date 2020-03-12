@@ -5,25 +5,6 @@ html {
   font-size: 0.9rem;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
-
-
 /*/////////////////////////// SEARCH BOX CSS //////////////////// */
 
 .search-sec{
@@ -52,7 +33,7 @@ html {
 @media (min-width: 992px){
     .search-sec{
         position: relative;
-        top: -114px;
+        top: -104px;
         background: rgba(2,116,191, 0.51);
     }
 }
@@ -70,14 +51,30 @@ html {
     margin-left:50px;
     font-size:50px;
     font-weight:bold;
-    color:#f44242 !important;
+    /*font-family:Londrina+Sketch;*/
+    color:#f44242 !important; 
     text-transform:uppercase; 
-    text-shadow:3px 3px 5px #777;    
+    text-shadow:  -1px -1px 0 #000,
+		              1px -1px 0 #000,
+		              -1px 1px 0 #000,
+		              1px 1px 0 #000;
+    /*text-shadow:3px 3px 5px #777;    */
 }
 
 /*/////////////////////////// FORM ///////////////////////*/
 
+.slider-handle.custom {
+	background: transparent none;
+	/* You can customize the handle and set a background image */
+}
 
+/* Or display content like unicode characters or fontawesome icons */
+.slider-handle.custom::before {
+	line-height: 20px;
+	font-size: 20px;
+	content: '\2605'; /*unicode star character*/
+	color: #726204;
+}
 
 
 
@@ -143,29 +140,170 @@ html {
   margin-bottom: 20px;
 }
 
-/*.page-footer {*/
-/*  padding-top:32px;*/
-/*  border-top:1px solid #ddd;*/
-/*  text-align:center;*/
-/*  padding-bottom:20px;*/
+
+/*/////////////////////////// FOOTER ///////////////////////*/
+
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:10px 0 10px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+
+.site-footer .small
+{
+  margin:60px 0
+}
+
+.site-footer a
+{
+  color:#737373;
+}
+
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+
+.footer-links li
+{
+  display:block
+}
+
+.site-footer .social-icons
+{
+  text-align:right
+}
+
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.copyright-text
+{
+  margin:0
+}
+
+@media (max-width:991px)
+{
+
+.site-footer [class^=col-]
+  {
+    margin-bottom:20px
+  }
+}
+
+@media (max-width:767px)
+{
+.site-footer
+  {
+    padding-bottom:0
+  }
+.site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+/*.social-icons li.title*/
+/*{*/
+/*  margin-right:15px;*/
+/*  text-transform:uppercase;*/
+/*  color:#96a2b2;*/
+/*  font-weight:700;*/
+/*  font-size:13px*/
 /*}*/
 
-/*.page-footer a {*/
-/*  margin:0px 10px;*/
-/*  display:inline-block;*/
-/*  color:#282b2d;*/
-/*  font-size:18px;*/
-/*}*/
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
 
-/*.page-footer .links {*/
-/*  display:inline-block;*/
-/*}*/
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
 
-/*@media(min-width: 992px){*/
-/*  .playground_map #map{*/
-/*    height: 500px;*/
-/*  }*/
-/*}*/
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
 
 
+.social-icons .facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons .twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons .linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons .github:hover
+{
+  background-color:#333
+}
 
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

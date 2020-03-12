@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('.carousel .carousel-slider .slider').carousel({
         interval: 4000,
     });
-})
+});
 
 /*========================== MAP ==================================*/
 // Initialize and add the map
@@ -20,9 +20,9 @@ function initMap() {
   
   // The info window, when marker is clicked
   var contentString = '<div class="info-window">' +
-                '<h3>Info Window Content</h3>' +
+                '<h3>Playground Info Window </h3>' +
                 '<div class="info-content">' +
-                '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
+                '<p> Write up some information about the park being reviewed</p>' +
                 '</div>' +
                 '</div>';
 
@@ -38,4 +38,5 @@ function initMap() {
 }
 
 
-/*========================== NAV BAR ==================================*/
+/*========================== FORM ==================================*/
+$("#star_rating").slider({});
