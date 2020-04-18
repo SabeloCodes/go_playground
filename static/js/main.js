@@ -39,4 +39,9 @@ function initMap() {
 
 
 /*========================== FORM ==================================*/
-$("#star_rating").slider({});
+
+$('#star_rating').slider({
+	formatter: function(value) {
+		return 'Current value: ' + value;
+	}
+});

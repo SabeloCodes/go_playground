@@ -38,7 +38,10 @@ def insert_playground():
 def show_playground():
     return render_template("showplayground.html", 
                             playgrounds = mongo.db.playgrounds.find())
+                            
 
+
+# BROWSE PLAYGROUND FUNCTION
 # @app.route('/')
 # @app.route('/browse_playground', methods=["GET", "POST"])
 # def browse_playground():

@@ -5,6 +5,11 @@ html {
   font-size: 0.9rem;
 }
 
+.container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /*/////////////////////////// NAV BAR ///////////////////////*/
 
 .navbar-brand {
@@ -22,12 +27,20 @@ html {
     /*text-shadow:3px 3px 5px #777;    */
 }
 
+
+/*/////////////////////////// CAROUSEL CSS //////////////////// */
+
+.carousel {
+  padding-top: 50px;
+}
+  
+
 /*/////////////////////////// SEARCH BOX CSS //////////////////// */
 
-.search-sec{
+.search-sec {
     padding: 2rem;
 }
-.search-slt{
+.search-slt {
     display: block;
     width: 100%;
     font-size: 0.875rem;
@@ -64,21 +77,25 @@ html {
 
 /*/////////////////////////// FORM ///////////////////////*/
 
+
+
+/* Customizing the slider */
 .slider-handle .custom {
 	background: transparent none;
-	/* You can customize the handle and set a background image */
 }
 
-/* Or display content like unicode characters or fontawesome icons */
-.slider-handle.custom::before {
-	line-height: 20px;
-	font-size: 20px;
-	content: '\2605'; /*unicode star character*/
-	color: #726204;
+.slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 3px #00cc66,
+              0 0 0 6px white;
 }
 
-
-
+/*.btn-info{*/
+/*    width: 100%;*/
+/*    font-size: 16px;*/
+/*    font-weight: 400;*/
+    /*height: calc(3rem + 2px) !important;*/
+/*    border-radius:0;*/
+/*    background-color: #f44242;*/
 
 /*/////////////////////////// MAP ///////////////////////*/
 
@@ -93,17 +110,17 @@ html {
 /*  box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);*/
 /*}*/
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  font-weight:bold;
-}
+/*.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {*/
+/*  font-weight:bold;*/
+/*}*/
 
-.nav-item.item {
-  padding-right:2rem;
-}
+/*.nav-item.item {*/
+/*  padding-right:2rem;*/
+/*}*/
 
-.navbar-nav:last-child .item:last-child, .navbar-nav:last-child .item:last-child a {
-  padding-right:0;
-}
+/*.navbar-nav:last-child .item:last-child, .navbar-nav:last-child .item:last-child a {*/
+/*  padding-right:0;*/
+/*}*/
 
 .playground_map .playground_info .icon {
   color:#ffb526;
@@ -142,13 +159,13 @@ html {
 }
 
 
-/*/////////////////////////// FOOTER ///////////////////////*/
 
+/*/////////////////////////// FOOTER ///////////////////////*/
 
 .site-footer
 {
   background-color:#26272b;
-  padding:10px 0 10px;
+  padding:10px 10px 10px;
   font-size:15px;
   line-height:24px;
   color:#737373;
@@ -241,15 +258,6 @@ html {
   display:inline-block;
   margin-bottom:4px
 }
-
-/*.social-icons li.title*/
-/*{*/
-/*  margin-right:15px;*/
-/*  text-transform:uppercase;*/
-/*  color:#96a2b2;*/
-/*  font-weight:700;*/
-/*  font-size:13px*/
-/*}*/
 
 .social-icons a{
   background-color:#eceeef;
