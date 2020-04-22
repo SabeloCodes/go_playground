@@ -8,15 +8,8 @@
     <div class="col-8">
       <form action="{{ url_for('insert_playground') }}" method="POST">
         <div class="form-group">
-          <label for="email2">
-            Playground
-          </label>
-          <div class="input-group">
-           <div class="input-group-addon">
-        	  <i class="fas fa-child"></i>
-           </div>
+          <label for="email2">Playground</label>
           <input type="text" class="form-control" id="playground_name" name="playground_name" aria-describedby="emailHelp" placeholder="Enter playground name">
-          </div>
         </div>
         
         <div class="form-group">
@@ -29,15 +22,15 @@
             </select>
         </div>
         
-        <div class="form-group slider">
+        <div class="form-group">
           <label for="formControlRange">Star Rating</label>
-          <input type="range" class="form-control-range slider-handle" name="star_rating" id="star_rating" handle="custom" min="1" max="5" step="1" value="3">
+          <input type="range" class="form-control-range slider-handle" name="star_rating" id="star_rating" data-slider-handle="custom" min="0" max="10">
         </div>
+
         
         <div class="form-group">
           <label for="description1">Review</label>
-          <textarea class="form-control" name="playground_descreption" id="playground_descreption" rows="3" placeholder="Write your review here...">
-          </textarea>
+          <textarea class="form-control" name="playground_descreption" id="playground_descreption" rows="3" placeholder="Write your review here..."></textarea>
         </div>
         
         <div class="form-group">

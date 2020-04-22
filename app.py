@@ -34,21 +34,12 @@ def insert_playground():
     playgrounds.insert_one(request.form.to_dict())
     return redirect(url_for('show_playground'))                            
 
+
+    
 @app.route('/show_playground')
 def show_playground():
     return render_template("showplayground.html", 
                             playgrounds = mongo.db.playgrounds.find())
-                            
-
-
-# BROWSE PLAYGROUND FUNCTION
-# @app.route('/')
-# @app.route('/browse_playground', methods=["GET", "POST"])
-# def browse_playground():
-#  data1 = mongo.db.parks.find()    data2 = mongo.db.parks.find()
-#   if request.method == "POST":
-# return render_template('browseplayground.html', 
-#                             playgrounds = mongo.db.playgrounds.find())
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
