@@ -7,7 +7,8 @@
       <form action="{{ url_for('insert_playground') }}" method="POST">
         <div class="form-group">
           <label for="playground_name">Playground</label>
-          <input type="text" class="form-control" id="playground_name" name="playground_name" aria-describedby="emailHelp" placeholder="Enter playground name">
+          <input type="text" class="form-control" id="playground_name" name="playground_name" 
+          placeholder="Enter playground name" value="{{ playground.playground_name }}">
         </div>
         
         <div class="form-group">
@@ -15,11 +16,7 @@
             <select class="custom-select" name="borough_name" id="borough_name">
               <option disabled selected>Choose a borough</option>
               {% for b in boroughs %}
-                  {% if b.borough_name == playground.borough_name %}
-                  <option value="{{ b.borough_name }}" selected> {{ b.borough_name }} </option>
-                  {% else %}
-                  <option value="{{ b.borough_name }}"> {{ b.borough_name }} </option>
-                {% endif %}
+                <option value="{{ b.borough_name }}"> {{ b.borough_name }} </option>
               {% endfor %}
             </select>
         </div>
@@ -31,8 +28,8 @@
 
         
         <div class="form-group">
-          <label for="description1">Review</label>
-          <textarea class="form-control" name="playground_descreption" id="playground_descreption" rows="3" placeholder="Write your review here..."></textarea>
+          <label for="playground_descreption">Review</label>
+          <textarea class="form-control" name="playground_descreption" id="playground_descreption" rows="3"> {{ playground.playground_description }}</textarea>
         </div>
         
         <div class="form-group">
