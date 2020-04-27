@@ -100,16 +100,16 @@ html {
 }
 @media (min-width: 992px){
   .search-sec{
-      position: relative;
-      top: -104px;
-      background: rgba(72,116,191,0.51);
+    position: relative;
+    top: -104px;
+    background: rgba(72,116,191,0.51);
   }
 }
 
 @media (max-width: 992px){
-    .search-sec{
-        background: #4874BF;
-    }
+  .search-sec{
+    background: #4874BF;
+  }
 }
 
 
@@ -117,16 +117,16 @@ html {
 
 .form-control {
 	border-radius: 0;
-	border-color: #ccc;
+	border-color: #aaaaaa;
   border-width: 0 0 2px 0;
   border-style: none none solid none;
   box-shadow: none;
 }
+
 .form-control:focus {
 	box-shadow: none;
 	border-color: #aaaaaa;
 }
-
 
 h2 {
   margin-left: auto;
@@ -144,15 +144,6 @@ h2 {
 	margin: 0;
 	display: block;
 	opacity: 1;
-	-webkit-transition: .333s ease top, .333s ease opacity;
-	transition: .333s ease top, .333s ease opacity;
-}
-
-.js-hide-label {
-	opacity: 0; 	
-}
-.js-unhighlight-label {
-	color: #999 
 }
 
 /* Customizing the slider */

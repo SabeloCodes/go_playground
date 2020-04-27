@@ -4,72 +4,80 @@
 <div class="container">
     <div class="row">
       <form action="{{ url_for('insert_playground') }}" method="POST" class="col-lg-12">
+        
+        <div class="col-lg-12">
+        <div class="row">
+          <div class="form-group text-center col-lg-12">
+            <h2>
+              Edit Playground
+            </h2>
+          </div>
+        </div>
+          
         <div class="row">
           <div class="form-group col-lg-12">
-              <label for="playground_name">Playground</label>
-              <input type="text" class="form-control" id="playground_name" name="playground_name" 
-              placeholder="Enter playground name" value="{{ playground.playground_name }}">
+            <label for="playground_name" class="form-label">Playground</label>
+            <input type="text" class="form-control" id="playground_name" name="playground_name" 
+            placeholder="Enter playground name" value="{{ playground.playground_name }}">
           </div>
         </div>
         
         <div class="row">
-           <div class="form-group col-lg-12">
-             <label for="borough_name">Borough</label>
-               <select class="custom-select" name="borough_name" id="borough_name">
+          <div class="form-group col-lg-12">
+            <label for="borough_name" class="form-label">Borough</label>
+              <select class="form-control" name="borough_name" id="borough_name">
                  <option disabled selected>Choose a borough</option>
                  {% for b in boroughs %}
                      {% if b.borough_name == playground.borough_name %}
                      <option value="{{ b.borough_name }}" selected> {{ b.borough_name }} </option>
                      {% else %}
-                     <option value="{{ b.borough_name }}"> {{ b.borough_name }} </option>
+                     <ption value="{{ b.borough_name }}"> {{ b.borough_name }} </option>
                    {% endif %}
                  {% endfor %}
-               </select>
-           </div>
-          </div>
-        
-          <div class="row">
-            <div class="form-group col-lg-12">
-              <label for="formControlRange">Star Rating</label>
-              <input type="range" class="form-control-range slider-handle" name="star_rating" id="star_rating" data-slider-handle="custom" min="0" max="10">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-group col-lg-12">
-              <label for="playground_descreption">Review</label>
-              <textarea class="form-control" name="playground_descreption" id="playground_descreption" rows="3"> {{ playground.playground_description }}</textarea>
-            </div>
-          </div>
-        
-          <div class="row">
-            <div class="form-group col-lg-12">
-              <label for="addImage">Images</label>
-              <div class="input-group" id="addImage">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="addon2"><i class="far fa-file-image"></i></span>
-                </div>
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="file2" aria-describedby="addon2">
-                  <label class="custom-file-label" for="file2">Choose file</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="row">
-            <div class="custom-control custom-checkbox form-group col-lg-12">
-                <input type="checkbox" class="custom-control-input" id="checkTerms">
-                <label class="custom-control-label" for="checkTerms">I have read and understood the Terms & Conditions.</label>
-            </div>
-          </div>
-        
-        <div class="row">
-          <div class="form-group col-lg-12">
-            <button type="submit" class="btn btn-info">Submit</button>
+              </select>
           </div>
         </div>
         
+        <div class="row">
+          <div class="form-group col-lg-12">
+            <label for="rating" class="form-label">Star Rating</label>
+            <input type="range" class="form-control-range slider-handle" name="star_rating" id="star_rating" data-slider-handle="custom" min="0" max="10">
+          </div>
+        </div>
+        </div>
+          
+        <div class="col-lg-12">  
+        <div class="row">
+          <div class="form-group col-lg-12">
+            <label for="playground_descreption" class="form-label">Review</label>
+            <textarea class="form-control" name="playground_descreption" id="playground_descreption" rows="3"> {{ playground.playground_description }}</textarea>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <label for="addImage" class="form-label">Images</label>
+            <div class="form-group">
+              <input type="file" class="" name="file">
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="custom-checkbox form-group col-lg-12">
+              <input type="checkbox" class="custom-control-input" id="checkTerms">
+              <label class="custom-control-label form-label" for="checkTerms">I have read and understood the Terms & Conditions.</label>
+          </div>
+        </div>
+        </div>
+        
+        <div class="row">
+          <div class="form-group col-lg-12">
+            <button type="submit" class="btn btn-submit">SUBMIT
+              <span><i class="far fa-paper-plane"></i></span>
+            </button>
+          </div>
+        </div>
       </form>
     </div>
   </div>
