@@ -84,7 +84,45 @@ html {
 
 /*/////////////////////////// FORM ///////////////////////*/
 
+.form-control {
+	border-radius: 0;
+	border-color: #ccc;
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+   	box-shadow: none;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: #aaaaaa;
+}
 
+
+h2 {
+  margin-left: auto;
+  margin-top: 50px;
+  text-align: left;
+  font-weight: 100;
+  font-size: 2.8em;
+  color: #5d7a8a;
+}
+
+/*Styling for form inputs*/
+.form-label {
+	font-size: 12px;
+	color: #5e9bfc;
+	margin: 0;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+
+.js-hide-label {
+	opacity: 0; 	
+}
+.js-unhighlight-label {
+	color: #999 
+}
 
 /* Customizing the slider */
 .slider-handle .custom {
