@@ -10,12 +10,42 @@ html {
   padding-bottom: 15px;
 }
 
-.btn_edit {
-    height: 48px;
-    line-height: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.btn-edit {
+  background: 0 0 #ffffff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  color: #2f323a;
+  font-size: 16px;
+  /*height: 48px;*/
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
+
+.btn-edit:hover,.btn-edit:active, .btn-edit:focus {
+	border-color: #5e9bfc;
+	color: #5e9bfc;
+}
+
+.btn-submit {
+	background: 0 0 #ffffff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  color: #2f323a;
+  font-size: 16px;
+  line-height: inherit;
+  margin: 30px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+.btn-submit:hover,.btn-submit:active, .btn-submit:focus {
+	border-color: #5e9bfc;
+	color: #5e9bfc;
+}
+
+
 
 /*/////////////////////////// NAV BAR ///////////////////////*/
 
@@ -45,34 +75,35 @@ html {
 /*/////////////////////////// SEARCH BOX CSS //////////////////// */
 
 .search-sec {
-    padding: 1rem;
+  padding: 1.5rem;
+  margin-top: 19.5px;
 }
 .search-slt {
-    display: block;
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: #55595c;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    height: calc(3rem + 2px) !important;
-    border-radius:0;
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  height: calc(3rem + 2px) !important;
 }
-.wrn-btn{
-    width: 100%;
-    /*font-size: 16px;*/
-    font-weight: 400;
-    height: calc(3rem + 2px) !important;
-    border-radius:0;
-    background-color: #f44242;
+.search-btn{
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  height: calc(3rem + 2px) !important;
+  border: 1px solid #2f323a;
+  border-radius: 3px;;
+  background-color: #f44242;
 }
 @media (min-width: 992px){
-    .search-sec{
-        position: relative;
-        top: -104px;
-        background: rgba(2,116,191, 0.51);
-    }
+  .search-sec{
+      position: relative;
+      top: -104px;
+      background: rgba(72,116,191,0.51);
+  }
 }
 
 @media (max-width: 992px){
@@ -87,9 +118,9 @@ html {
 .form-control {
 	border-radius: 0;
 	border-color: #ccc;
-   	border-width: 0 0 2px 0;
-   	border-style: none none solid none;
-   	box-shadow: none;
+  border-width: 0 0 2px 0;
+  border-style: none none solid none;
+  box-shadow: none;
 }
 .form-control:focus {
 	box-shadow: none;
@@ -133,14 +164,6 @@ h2 {
   box-shadow: 0 0 0 3px #00cc66,
               0 0 0 6px white;
 }
-
-/*.btn-info{*/
-/*    width: 100%;*/
-/*    font-size: 16px;*/
-/*    font-weight: 400;*/
-    /*height: calc(3rem + 2px) !important;*/
-/*    border-radius:0;*/
-/*    background-color: #f44242;*/
 
 /*/////////////////////////// MAP ///////////////////////*/
 
@@ -364,12 +387,6 @@ h2 {
 
 
 /*/////////////////////////// GRID ///////////////////////*/
-
-
-/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400');*/
-/*body {*/
-/*	font-family: 'lato', sans-serif;*/
-/*}*/
 
 .square-card {
 	margin-left: auto;
