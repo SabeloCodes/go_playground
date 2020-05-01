@@ -16,12 +16,6 @@ mongo = PyMongo(app)
 def find_playground():
     return render_template("playground.html", 
                             playgrounds = mongo.db.playgrounds.find())
-    
-# @app.route('/add_playground')
-# def add_playground():
-#     _boroughs = mongo.db.boroughs.find()
-#     borough_list = [borough for borough in _boroughs]
-#     return render_template("addplayground.html", boroughs = borough_list) 
                             
 @app.route('/add_playground')
 def add_playground():
@@ -30,25 +24,58 @@ def add_playground():
                             
 @app.route('/insert_playground', methods=['POST'])
 def insert_playground():
-    playgrounds = mongo.db.tasks
+    playgrounds = mongo.db.playgrounds
     playgrounds.insert_one(request.form.to_dict())
     return redirect(url_for('show_playground'))                            
-
-
     
 @app.route('/show_playground')
 def show_playground():
     return render_template("showplayground.html", 
                             playgrounds = mongo.db.playgrounds.find())
+  
                             
-#selects a playground and retreives from the database using its id and displays it in a form for editing
+#Retreives playground from the database using its id and displays it in a form for editing
 @app.route('/edit_playground/<playground_id>')
 def edit_playground(playground_id):
-    #get the playground that matches the playground id '_id' is the key 
+    """Gets playground that matches the playground id '_id' is the key""" 
     the_playground =  mongo.db.playgrounds.find_one({"_id": ObjectId(playground_id)})
     all_boroughs =  mongo.db.boroughs.find()
     return render_template('editplayground.html', playground=the_playground,
                            boroughs=all_boroughs)
+
+
+#Database updates with edited info 
+@app.route('/update_playground/<playground_id>', methods=["POST"])
+def update_playground(playground_id):
+    playgrounds = mongo.db.playgrounds
+    """Access playgrounds collection and call the update function"""
+    playgrounds.update( {'_id': ObjectId(playground_id)},
+    #Match form fields to playgrounds collection keys
+    {
+        'playground_name': request.form.get('playground_name'),
+        'borough_name': request.form.get('borough_name'),
+        'playground_description': request.form.get('playground_description'),
+        'star_rating': request.form.get('star_rating'),
+        'image_url': request.form.get('image_url')
+    })
+    return redirect(url_for('show_playground'))
+
+
+
+# Function and route to display/browse all playgrounds 
+@app.route('/')
+@app.route('/browse_playground', methods=["GET", "POST"])
+def browse_playground():
+    borough_name = mongo.db.boroughs.find(), 
+    playground_name = mongo.db.playgrounds.find(),
+    playground_description = mongo.db.playgrounds.find(),
+    star_rating = mongo.db.playgrounds.find(),
+    image_url = mongo.db.playgrounds.find()
+    
+    if request.method == "POST":
+        return render_template('browseplayground.html',
+                    playgrounds = mongo.db.playgrounds.find())
+    
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

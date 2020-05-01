@@ -6,7 +6,6 @@
     <!--    {{ playground.playground_name }}-->
     <!--    {{ playground.playground_description }}-->
     <!--    {{ playground.star_rating }}-->
-    <!--    {{ playground.entry_date }}-->
     <!--{% endfor %}-->
 
 <div class="container">
@@ -47,8 +46,21 @@
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 p-0">
-                                <input type="text" class="form-control search-slt" placeholder="Enter borough">
+                                <!--<input type="text" class="form-control search-slt" placeholder="Enter borough">-->
+                                        
+                                <div class="form-group col-lg-12">
+                                    <!--<label for="borough_name" class="form-label">Borough</label>-->
+                                    <select class="form-control" name="borough_name" id="borough_name">
+                                        <option disabled selected>Choose a borough</option>
+                                            <!--{% for b in boroughs %}-->
+                                            <!--{{ b.borough_name }}-->
+                                            {% for playground in playgrounds %}
+                                         <option value="{{ playground.borough_name }}"> {{ playground.borough_name }} </option>
+                                            {% endfor %}
+                                    </select>
+                                </div>
                             </div>
+                                                
                             <div class="col-lg-6 col-md-6 col-sm-12 p-0">
                                 <button type="button" class="btn btn-danger search-btn">Search</button>
                             </div>
