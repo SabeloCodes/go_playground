@@ -2,52 +2,24 @@
 {% block content %}
 
 <div class="row">
-    
      {% for playground in playgrounds %}
-    <div class="col-md-3 col-sm-12">
-		<div class="square-card">
-	<a href="#" alt="square card">
-		<div class="card-header">
-			<div class="card-header_overlay">
-				<span class="pill">$35.70</span>
-			</div>
-		</div>
-		<div class="card-title">
-			<h4>cocktail fruit salad with freshness</h4>			
-		</div>
-		<div class="cta">
-            <!-- <a href="https://google.com">view recipe</a> -->
-			<a  href="https://google.com">add to bag</a>
-		</div>
-	</a>
+     
+  <div class="col-sm-12 col-md-4">
+    <div class="playground-card">
+    	<div class="background-block">
+    		   <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background"/>
+    	</div>
+    	<div class="profile-thumb-block">
+    		   <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
+    	</div>
+    	<div class="card-content">
+           <h2>Sabelo</h2>
+           <h3>Web Dev</h3>
+           <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+           </div>
+       </div>
+       <p class="mt-3 w-100 float-left text-center"><strong>Sabelo Profile Card</strong></p>
+  </div>
 </div>
-	</div>
-    
-    {% endfor %}
-</div>
-
 {% endblock %}
 
-
-{% for recipe in recipes %}
-        <div class="col-sm-12 col-md-6 col-lg-4 loop-item">
-            <a href="{{url_for('display_recipe', recipe_id=recipe._id)}}">
-            <div class="card">
-                <img class="card-img-top" src="{{recipe.image_url}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{recipe.recipe_name}}</h5>
-                    <p class="card-details"> by {{recipe.author}} </p>
-                </div>
-                <div class="card-footer text-muted">
-                    <p class="card-details">{{recipe.cuisine_name}}</p>
-                    {% if recipe.course_name == "Main" %}
-                        <p class="card-details">  {{recipe.course_name}} Course</p>
-                    {% else %}
-                        <p class="card-details">{{recipe.course_name}}</p>
-                    {% endif %}
-                </div>
-            </div>
-            </a>
-        </div>
-    {% endfor %}
-</div>

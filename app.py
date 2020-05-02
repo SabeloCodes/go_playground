@@ -12,22 +12,28 @@ app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo = PyMongo(app)
 
 @app.route('/')
+
+# Function for displaying the playground.html page
 @app.route('/find_playground')
 def find_playground():
     return render_template("playground.html", 
-                            playgrounds = mongo.db.playgrounds.find())
-                            
+                            playgrounds = mongo.db.playgrounds.find(),
+                            boroughs = mongo.db.boroughs.find())
+ 
+# Function for displaying the addplayground.html page
 @app.route('/add_playground')
 def add_playground():
     return render_template("addplayground.html", 
                             boroughs = mongo.db.boroughs.find()) 
-                            
+
+# Function for adding a playground to the database                            
 @app.route('/insert_playground', methods=['POST'])
 def insert_playground():
     playgrounds = mongo.db.playgrounds
     playgrounds.insert_one(request.form.to_dict())
-    return redirect(url_for('show_playground'))                            
+    return redirect(url_for('show_playground'))     
     
+# Function for displaying the showplayground.html page    
 @app.route('/show_playground')
 def show_playground():
     return render_template("showplayground.html", 
@@ -74,9 +80,9 @@ def browse_playground():
     
     if request.method == "POST":
         return render_template('browseplayground.html',
-                    playgrounds = mongo.db.playgrounds.find())
+                    playgrounds = mongo.db.playgrounds.find(),
+                    boroughs = mongo.db.boroughs.find())
     
-
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
