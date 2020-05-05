@@ -147,14 +147,14 @@ h2 {
 }
 
 /* Customizing the slider */
-.slider-handle .custom {
-	background: transparent none;
-}
+/*.slider-handle .custom {*/
+/*	background: transparent none;*/
+/*}*/
 
-.slider::-webkit-slider-thumb:hover {
-  box-shadow: 0 0 0 3px #00cc66,
-              0 0 0 6px white;
-}
+/*.slider::-webkit-slider-thumb:hover {*/
+/*  box-shadow: 0 0 0 3px #00cc66,*/
+/*              0 0 0 6px white;*/
+/*}*/
 
 /*/////////////////////////// MAP ///////////////////////*/
 

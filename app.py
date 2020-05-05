@@ -5,6 +5,7 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
+# Reading the environment vairable set on the .bash hidden file with Mongo Collection Name and Connection 
 app.config["MONGO_DBNAME"] = 'go_playground'
 app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 
@@ -12,10 +13,10 @@ app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo = PyMongo(app)
 
 @app.route('/')
-
 # Function for displaying the playground.html page
 @app.route('/find_playground')
 def find_playground():
+    # print(dir (mongo.db.playgrounds.find()))
     return render_template("playground.html", 
                             playgrounds = mongo.db.playgrounds.find(),
                             boroughs = mongo.db.boroughs.find())
@@ -69,19 +70,25 @@ def update_playground(playground_id):
 
 
 # Function and route to display/browse all playgrounds 
-@app.route('/')
 @app.route('/browse_playground', methods=["GET", "POST"])
 def browse_playground():
-    borough_name = mongo.db.boroughs.find(), 
     playground_name = mongo.db.playgrounds.find(),
+    borough_name = mongo.db.boroughs.find(), 
     playground_description = mongo.db.playgrounds.find(),
     star_rating = mongo.db.playgrounds.find(),
     image_url = mongo.db.playgrounds.find()
-    
+    filter={}
+    filter ["borough_name"] = request.form.get("borough_name")
     if request.method == "POST":
+        # borough_name=request.form.get("borough_name")
         return render_template('browseplayground.html',
                     playgrounds = mongo.db.playgrounds.find(),
                     boroughs = mongo.db.boroughs.find())
+            
+    return render_template('browseplayground.html',
+                    playgrounds = mongo.db.playgrounds.find({"$and":[filter]}),
+                    boroughs = mongo.db.boroughs.find())
+    
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
