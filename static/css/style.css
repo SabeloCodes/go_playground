@@ -78,26 +78,7 @@ html {
   padding: 1.5rem;
   margin-top: 19.5px;
 }
-.search-slt {
-  display: block;
-  width: 100%;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  color: #55595c;
-  background-color: #fff;
-  border: 1px solid #2f323a;
-  border-radius: 3px;
-  height: calc(3rem + 2px) !important;
-}
-.search-btn{
-  width: 100%;
-  font-size: 16px;
-  font-weight: 400;
-  height: calc(3rem + 2px) !important;
-  border: 1px solid #2f323a;
-  border-radius: 3px;;
-  background-color: #f44242;
-}
+
 @media (min-width: 992px){
   .search-sec{
     position: relative;
@@ -146,15 +127,6 @@ h2 {
 	opacity: 1;
 }
 
-/* Customizing the slider */
-/*.slider-handle .custom {*/
-/*	background: transparent none;*/
-/*}*/
-
-/*.slider::-webkit-slider-thumb:hover {*/
-/*  box-shadow: 0 0 0 3px #00cc66,*/
-/*              0 0 0 6px white;*/
-/*}*/
 
 /*/////////////////////////// MAP ///////////////////////*/
 

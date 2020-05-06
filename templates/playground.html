@@ -34,30 +34,24 @@
     </section>
 
     <section class="search-sec">
-        <!--<div class="container">-->
-            <form action="#" method="post" novalidate="novalidate">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 p-0">
-                                <!--<input type="text" class="form-control search-slt" placeholder="Enter borough">-->
-                                        
-                                <div class="form-group col-lg-12">
-                                    <form action="">
-                                    <select method="POST" type="submit" class="form-control" name="borough_name" id="borough_name" onChange="window.location.href=this.value">
-                                        <option disabled selected>Choose a borough</option>
-                                            {% for playground in playgrounds %}
-                                         <option value="{{url_for('browse_playground', borough_name=playground.borough_name)}}"> {{ playground.borough_name }} </option>
-                                            {% endfor %}
-                                    </select>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+        <form action="#" method="POST">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <select method="POST" type="submit" class="form-control" name="borough_name" id="borough_name" onChange="window.location.href=this.value">
+                            <option disabled selected>
+                                Choose a borough
+                            </option>
+                                {% for playground in playgrounds %}
+                            <option value="{{url_for('browse_playground', borough_name=playground.borough_name)}}"> 
+                                {{ playground.borough_name }} 
+                            </option>
+                                {% endfor %}
+                        </select>
                     </div>
                 </div>
-            </form>
-        <!--</div>-->
+            </div>
+        </form>
     </section>
 </div>
 {% endblock %}
