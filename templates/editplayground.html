@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row">
-      <form action="{{ url_for('insert_playground') }}" method="POST" class="col-lg-12">
+      <form action="{{ url_for('update_playground', playground_id=playground._id) }}" method="POST" class="col-lg-12">
         
         <div class="col-lg-12">
         <div class="row">
@@ -27,21 +27,14 @@
             <label for="borough_name" class="form-label">Borough</label>
               <select class="form-control" name="borough_name" id="borough_name">
                  <option disabled selected>Choose a borough</option>
-                 {% for b in boroughs %}
-                     {% if b.borough_name == playground.borough_name %}
-                     <option value="{{ b.borough_name }}" selected> {{ b.borough_name }} </option>
+                      {% for playground in playgrounds %}
+                     {% if playground.borough_name == playground.borough_name %}
+                     <option value="{{ playground.borough_name }}" selected> {{ playground.borough_name }} </option>
                      {% else %}
-                     <ption value="{{ b.borough_name }}"> {{ b.borough_name }} </option>
+                     <ption value="{{ playground.borough_name }}"> {{ playground.borough_name }} </option>
                    {% endif %}
                  {% endfor %}
               </select>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="form-group col-lg-12">
-            <label for="rating" class="form-label">Star Rating</label>
-            <input type="range" class="form-control-range slider-handle" name="star_rating" id="star_rating" data-slider-handle="custom" min="0" max="10">
           </div>
         </div>
         </div>
@@ -71,13 +64,16 @@
         </div>
         </div>
         
+        <div class="col-lg-12">
         <div class="row">
           <div class="form-group col-lg-12">
-            <button type="submit" class="btn btn-submit">SUBMIT
+            <button type="submit" class="btn btn-submit pull-center">SUBMIT
               <span><i class="far fa-paper-plane"></i></span>
             </button>
           </div>
         </div>
+        </div>
+        
       </form>
     </div>
   </div>
