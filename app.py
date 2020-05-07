@@ -47,9 +47,9 @@ def show_playground():
 def edit_playground(playground_id):
     """Gets playground that matches the playground id '_id' is the key""" 
     the_playground =  mongo.db.playgrounds.find_one({"_id": ObjectId(playground_id)})
-    all_boroughs =  mongo.db.boroughs.find()
+    all_playgrounds =  mongo.db.playgrounds.find()
     return render_template('editplayground.html', playground=the_playground,
-                           boroughs=all_boroughs)
+                           playgrounds=all_playgrounds)
 
 
 #Database updates with edited info 

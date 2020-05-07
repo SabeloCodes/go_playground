@@ -27,11 +27,11 @@
             <label for="borough_name" class="form-label">Borough</label>
               <select class="form-control" name="borough_name" id="borough_name">
                  <option disabled selected>Choose a borough</option>
-                      {% for playground in playgrounds %}
-                     {% if playground.borough_name == playground.borough_name %}
-                     <option value="{{ playground.borough_name }}" selected> {{ playground.borough_name }} </option>
+                      {% for p in playgrounds %}
+                     {% if p.borough_name == playground.borough_name %}
+                     <option value="{{ p.borough_name }}" selected> {{ p.borough_name }} </option>
                      {% else %}
-                     <ption value="{{ playground.borough_name }}"> {{ playground.borough_name }} </option>
+                     <option value="{{ p.borough_name }}"> {{ p.borough_name }} </option>
                    {% endif %}
                  {% endfor %}
               </select>
