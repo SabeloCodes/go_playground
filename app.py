@@ -81,13 +81,12 @@ def browse_playground():
     filter={}
     filter ["borough_name"] = request.form.get("borough_name")
     if request.method == "POST":
-        # borough_name=request.form.get("borough_name")
         return render_template('browseplayground.html',
                     playgrounds = mongo.db.playgrounds.find(),
                     boroughs = mongo.db.boroughs.find())
             
     return render_template('browseplayground.html',
-                    playgrounds = mongo.db.playgrounds.find({"$and":[filter]}),
+                    playgrounds = mongo.db.playgrounds.find(),
                     boroughs = mongo.db.boroughs.find())
     
     
