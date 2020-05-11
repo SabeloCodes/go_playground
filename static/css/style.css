@@ -205,6 +205,107 @@ h2 {
   margin-bottom: 20px;
 }
 
+
+/*/////////////////////////// CARD GRID ///////////////////////*/
+
+.playground-card {
+  margin: 50px 20px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height:368px;
+  border:none;
+}
+.playground-card .background-block {
+  float: left;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.playground-card .background-block .background {
+  width:100%;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+   -webkit-transform: scale(1.8);
+  transform: scale(2.8);
+}
+.playground-card .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  color:#232323;
+  float:left;
+  background:#efefef;
+  height:50%;
+  border-radius:0 0 5px 5px;
+  position: relative;
+  z-index: 9999;
+}
+.playground-card .card-content::before {
+  content: '';
+  background: #efefef;
+  width: 120%;
+  height: 100%;
+  left: 11px;
+  bottom: 51px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-13deg);
+}
+.playground-card .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  /*-webkit-transform: translate(-50%, 0%);*/
+  transform: translate(-50%, 0%);
+  z-index:99999;
+}
+.playground-card h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size:25px;
+}
+.playground-card h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top:10px;
+}
+.playground-card i {
+  display: inline-block;
+  font-size: 16px;
+  color: #232323;
+  text-align: center;
+  border: 1px solid #232323;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin:0 5px;
+}
+.playground-card .icon-block{
+  float:left;
+  width:100%;
+  margin-top:15px;
+}
+.playground-card .icon-block a{
+  text-decoration:none;
+}
+.playground-card i:hover {
+  background-color:#232323;
+  color:#fff;
+  text-decoration:none;
+}
+
+
+
 /*/////////////////////////// FOOTER ///////////////////////*/
 
 .site-footer
@@ -361,109 +462,3 @@ h2 {
     font-weight:600
   }
 }
-
-
-/*/////////////////////////// CARD GRID ///////////////////////*/
-
-.loop-item {
-    display: inline-block;
-    margin-bottom: 40px;
-    min-height: 500px;
-}
-
-.playground-card {
-  font-family: 'Open Sans', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  width: 100%;
-  text-align: center;
-  height:368px;
-  border:none;
-}
-.playground-card .background-block {
-    float: left;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-.playground-card .background-block .background {
-  width:100%;
-  vertical-align: top;
-  opacity: 0.9;
-  -webkit-filter: blur(0.5px);
-  filter: blur(0.5px);
-   -webkit-transform: scale(1.8);
-  transform: scale(2.8);
-}
-.playground-card .card-content {
-  width: 100%;
-  padding: 15px 25px;
-  color:#232323;
-  float:left;
-  background:#efefef;
-  height:50%;
-  border-radius:0 0 5px 5px;
-  position: relative;
-  z-index: 9999;
-}
-.playground-card .card-content::before {
-    content: '';
-    background: #efefef;
-    width: 120%;
-    height: 100%;
-    left: 11px;
-    bottom: 51px;
-    position: absolute;
-    z-index: -1;
-    transform: rotate(-13deg);
-}
-.playground-card .profile {
-  border-radius: 50%;
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  max-width: 100px;
-  opacity: 1;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(255, 255, 255, 1);
-  -webkit-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
-  z-index:99999;
-}
-.playground-card h2 {
-  margin: 0 0 5px;
-  font-weight: 600;
-  font-size:25px;
-}
-.playground-card h2 small {
-  display: block;
-  font-size: 15px;
-  margin-top:10px;
-}
-.playground-card i {
-  display: inline-block;
-    font-size: 16px;
-    color: #232323;
-    text-align: center;
-    border: 1px solid #232323;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    margin:0 5px;
-}
-.playground-card .icon-block{
-    float:left;
-    width:100%;
-    margin-top:15px;
-}
-.playground-card .icon-block a{
-    text-decoration:none;
-}
-.playground-card i:hover {
-  background-color:#232323;
-  color:#fff;
-  text-decoration:none;
-}
-

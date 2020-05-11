@@ -36,10 +36,13 @@ def insert_playground():
     return redirect(url_for('show_playground'))     
     
 # Function for displaying the showplayground.html page    
-@app.route('/show_playground')
-def show_playground():
-    return render_template("showplayground.html", 
-                            playgrounds = mongo.db.playgrounds.find())
+@app.route('/show_playground/<playground_id>')
+def show_playground(playground_id):
+    """Retrieving the playground and sending it through to the template"""
+    the_playground =  mongo.db.playgrounds.find_one({"_id": ObjectId(playground_id)})
+    all_playgrounds =  mongo.db.playgrounds.find()
+    return render_template('showplayground.html', playground=the_playground,
+                           playgrounds=all_playgrounds)
   
                             
 #Retreives playground from the database using its id and displays it in a form for editing
@@ -69,7 +72,6 @@ def update_playground(playground_id):
     return redirect(url_for('show_playground'))
 
 
-
 # Function and route to display/browse all playgrounds 
 @app.route('/browse_playground', methods=["GET", "POST"])
 def browse_playground():
@@ -78,15 +80,15 @@ def browse_playground():
     playground_description = mongo.db.playgrounds.find(),
     star_rating = mongo.db.playgrounds.find(),
     image_url = mongo.db.playgrounds.find()
-    filter={}
-    filter ["borough_name"] = request.form.get("borough_name")
+    borough_name = request.args.get('borough_name')
+    
     if request.method == "POST":
         return render_template('browseplayground.html',
                     playgrounds = mongo.db.playgrounds.find(),
                     boroughs = mongo.db.boroughs.find())
             
     return render_template('browseplayground.html',
-                    playgrounds = mongo.db.playgrounds.find(),
+                    playgrounds = mongo.db.playgrounds.find({'borough_name': borough_name}),
                     boroughs = mongo.db.boroughs.find())
     
     
