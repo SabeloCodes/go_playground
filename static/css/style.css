@@ -10,44 +10,73 @@ html {
   padding-bottom: 15px;
 }
 
+/*/////////////////////////// BUTTONS //////////////////// */
+
 .btn-edit {
-  background: 0 0 #ffffff;
-  border: 1px solid #2f323a;
-  border-radius: 3px;
-  color: #2f323a;
-  font-size: 16px;
-  /*height: 48px;*/
-  line-height: 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.btn-edit:hover,.btn-edit:active, .btn-edit:focus {
-	border-color: #0e367c;
-	color: #fba257;
-}
-
-.btn-submit {
-	background: 0 0 #ffffff;
+  background: #ffffff;
   border: 1px solid #2f323a;
   border-radius: 3px;
   color: #2f323a;
   font-size: 16px;
   line-height: inherit;
-  /*margin: 30px 0;*/
   padding: 10px 50px;
   text-align: center;
   display: block;
-  margin: 0 auto;; 
+  margin:20px 0 80px 0;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+  /*height: 48px;*/
+  /*line-height: 24px;*/
+  /*padding: 10px;*/
+}
+
+.btn-edit:hover,.btn-edit:active, .btn-edit:focus {
+	border-color: #0e367c;
+	color: #ffffff;
+	background-color: #0e367c;
+}
+
+.btn-delete {
+	background: #ffffff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  color: #2f323a;
+  font-size: 16px;
+  line-height: inherit;
+  padding: 10px 50px;
+  text-align: center;
+  display: block;
+  margin:20px 0 80px 0;
   text-transform: uppercase;
   transition: all 0.25s ease 0s;
 }
-.btn-submit:hover,.btn-submit:active, .btn-submit:focus {
-	border-color: #5e9bfc;
-	color: #5e9bfc;
+
+.btn-delete:hover,.btn-delete:active, .btn-delete:focus {
+	border-color: #f44242;
+	color: #ffffff;
+	background-color: #f44242;
 }
 
+.btn-submit {
+	background: #ffffff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  color: #2f323a;
+  font-size: 16px;
+  line-height: inherit;
+  padding: 10px 50px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+
+.btn-submit:hover,.btn-submit:active, .btn-submit:focus {
+	border-color: #4874bf;
+	color: #ffffff;
+	background-color: #4874bf;
+}
 
 
 /*/////////////////////////// NAV BAR ///////////////////////*/
