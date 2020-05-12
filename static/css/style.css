@@ -255,10 +255,10 @@ h2 {
   z-index: -1;
   transform: rotate(-13deg);
 }
-.playground-card .profile {
+.profile {
   border-radius: 50%;
   position: absolute;
-  bottom: 50%;
+  bottom: 65%;
   left: 50%;
   max-width: 100px;
   opacity: 1;
