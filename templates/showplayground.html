@@ -1,7 +1,8 @@
 {% extends 'base.html' %} {% block content %}
 
-    <div class="container playground_map">
-        <div class="col-lg-12">
+<div class="container">
+    <div href="{{ url_for('show_playground', playground_id=playground._id) }}" class="row">
+        <div class="playground_map col-lg-12">
             <div class="row">
                 <div class="col-lg-6">
                     <!--The div element for the map -->
@@ -63,5 +64,6 @@
         {% endfor %}
         </div>
     </div>
+</div>
 
 {% endblock %}

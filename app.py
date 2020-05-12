@@ -40,9 +40,7 @@ def insert_playground():
 def show_playground(playground_id):
     """Retrieving the playground and sending it through to the template"""
     the_playground =  mongo.db.playgrounds.find_one({"_id": ObjectId(playground_id)})
-    all_playgrounds =  mongo.db.playgrounds.find()
-    return render_template('showplayground.html', playground=the_playground,
-                           playgrounds=all_playgrounds)
+    return render_template('showplayground.html', playground=the_playground)
   
                             
 #Retreives playground from the database using its id and displays it in a form for editing
@@ -51,8 +49,11 @@ def edit_playground(playground_id):
     """Gets playground that matches the playground id '_id' is the key""" 
     the_playground =  mongo.db.playgrounds.find_one({"_id": ObjectId(playground_id)})
     all_playgrounds =  mongo.db.playgrounds.find()
+    print(the_playground) 
     return render_template('editplayground.html', playground=the_playground,
                            playgrounds=all_playgrounds)
+
+                           
 
 
 #Database updates with edited info 
