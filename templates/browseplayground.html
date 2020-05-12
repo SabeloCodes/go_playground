@@ -10,13 +10,13 @@
     		        <div class="background-block">
     		            <img src="{{ playground.image_url }}" alt="playground_image" class="background"/>
     		        </div>
-    		        <div class="profile-thumb-block">
+    		        <div class="profile">
     		            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
     		        </div>
     		        <div class="card-content">
                     	<h3>{{ playground.playground_name }}</h3>
                     	<h6>{{ playground.borough_name }}</h6>
-                    	<button type="submit" class="btn btn-submit">
+                    	<button type="submit" class="btn btn-outline-info">
                     	<a href="{{url_for('show_playground', playground_id=playground._id)}}">Playground Details</a>
                     	</button>
                     	<div class="icon-block">

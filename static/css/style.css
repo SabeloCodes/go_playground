@@ -78,6 +78,27 @@ html {
 	background-color: #4874bf;
 }
 
+.btn-outline-info{
+	background: #ffffff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  color: #2f323a;
+  font-size: 16px;
+  line-height: inherit;
+  padding: 10px 50px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+
+.btn-outline-info:hover,.btn-outline-info:active, .btn-outline-info:focus {
+	border-color: #4874bf;
+	color: #ffffff;
+	background-color: #4874bf;
+}
+
 
 /*/////////////////////////// NAV BAR ///////////////////////*/
 
@@ -215,8 +236,8 @@ h2 {
   overflow: hidden;
   width: 100%;
   text-align: center;
-  height:568px;
-  border:none;
+  height:468px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .playground-card .background-block {
   float: left;
@@ -225,21 +246,20 @@ h2 {
   overflow: hidden;
 }
 .playground-card .background-block .background {
-  width:100%;
+  width:150px;
+  height: 150px;
   vertical-align: top;
   opacity: 0.9;
-  -webkit-filter: blur(0.5px);
   filter: blur(0.5px);
-   -webkit-transform: scale(1.8);
   transform: scale(2.8);
 }
 .playground-card .card-content {
   width: 100%;
-  padding: 15px 25px;
+  padding: 30px 25px;
   color:#232323;
   float:left;
   background:#efefef;
-  height:50%;
+  height:60%;
   border-radius:0 0 5px 5px;
   position: relative;
   z-index: 9999;
