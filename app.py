@@ -16,9 +16,10 @@ mongo = PyMongo(app)
 # Function for displaying the playground.html page
 @app.route('/find_playground')
 def find_playground():
+    print(mongo.db.playgrounds.distinct("borough_name"))
     return render_template("playground.html", 
                             playgrounds = mongo.db.playgrounds.find(),
-                            boroughs = mongo.db.boroughs.find())
+                            boroughs = mongo.db.playgrounds.distinct("borough_name"))
  
 # Function for displaying the addplayground.html page
 @app.route('/add_playground')
@@ -87,6 +88,7 @@ def browse_playground():
     return render_template('browseplayground.html',
                     playgrounds = mongo.db.playgrounds.find({'borough_name': borough_name}),
                     boroughs = mongo.db.boroughs.find())
+    
     
 
 @app.route('/delete_playground/<playground_id>')

@@ -42,9 +42,9 @@
                             <option disabled selected>
                                 Choose a borough
                             </option>
-                                {% for playground in playgrounds %}
-                            <option value="{{url_for('browse_playground', borough_name=playground.borough_name)}}"> 
-                                {{ playground.borough_name }} 
+                                {% for borough in boroughs %}
+                            <option value="{{url_for('browse_playground', borough_name=borough)}}"> 
+                                {{ borough }} 
                             </option>
                                 {% endfor %}
                         </select>
