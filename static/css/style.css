@@ -103,18 +103,16 @@ html {
 /*/////////////////////////// NAV BAR ///////////////////////*/
 
 .navbar-brand {
-    margin-top:-5px;
-    margin-left:50px;
-    font-size:50px;
-    font-weight:bold;
-    /*font-family:Londrina+Sketch;*/
-    color:#f44242 !important;
-    text-transform:uppercase;
-    text-shadow:  -1px -1px 0 #000,
-		              1px -1px 0 #000,
-		              -1px 1px 0 #000,
-		              1px 1px 0 #000;
-    /*text-shadow:3px 3px 5px #777;    */
+  margin-top:-5px;
+  margin-left:50px;
+  font-size:50px;
+  font-weight:bold;
+  color:#f44242 !important;
+  text-transform:uppercase;
+  text-shadow:  -1px -1px 0 #000,
+		            1px -1px 0 #000,
+		            -1px 1px 0 #000,
+		            1px 1px 0 #000;
 }
 
 
@@ -140,11 +138,11 @@ html {
   }
 }
 
-@media (max-width: 992px){
-  .search-sec{
-    background: #4874BF;
-  }
-}
+/*@media (max-width: 992px){*/
+/*  .search-sec{*/
+/*    background: #4874BF;*/
+/*  }*/
+/*}*/
 
 
 /*/////////////////////////// FORM ///////////////////////*/
