@@ -70,7 +70,7 @@ def update_playground(playground_id):
     return redirect(url_for('show_playground'))
 
 
-# Function and route to display/browse all playgrounds 
+# Function and route to display/browse all playgrounds but filter by borough_name
 @app.route('/browse_playground', methods=["GET", "POST"])
 def browse_playground():
     playground_name = mongo.db.playgrounds.find(),
@@ -89,7 +89,24 @@ def browse_playground():
                     playgrounds = mongo.db.playgrounds.find({'borough_name': borough_name}),
                     boroughs = mongo.db.boroughs.find())
     
+# Function and route to display/browse all playgrounds 
+@app.route('/browse_all_playgrounds', methods=["GET", "POST"])
+def browse_all_playgrounds():
+    playground_name = mongo.db.playgrounds.find(),
+    borough_name = mongo.db.boroughs.find(), 
+    playground_description = mongo.db.playgrounds.find(),
+    star_rating = mongo.db.playgrounds.find(),
+    image_url = mongo.db.playgrounds.find()
     
+    if request.method == "POST":
+        return render_template('browseplayground.html',
+                    playgrounds = mongo.db.playgrounds.find(),
+                    boroughs = mongo.db.boroughs.find())
+            
+    return render_template('browseplayground.html',
+                    playgrounds = mongo.db.playgrounds.find(),
+                    boroughs = mongo.db.boroughs.find())    
+
 
 @app.route('/delete_playground/<playground_id>')
 def delete_playground(playground_id):
