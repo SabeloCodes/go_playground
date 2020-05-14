@@ -16,7 +16,6 @@ mongo = PyMongo(app)
 # Function for displaying the playground.html page
 @app.route('/find_playground')
 def find_playground():
-    print(mongo.db.playgrounds.distinct("borough_name"))
     return render_template("playground.html", 
                             playgrounds = mongo.db.playgrounds.find(),
                             boroughs = mongo.db.playgrounds.distinct("borough_name"))
