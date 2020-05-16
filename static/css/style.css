@@ -104,8 +104,9 @@ html {
 
 .navbar-brand {
   margin-top:-5px;
-  margin-left:50px;
-  font-size:50px;
+  margin-left:20px;
+  /*font-family: 'Lobster', cursive;*/
+  font-size:30px;
   font-weight:bold;
   color:#f44242 !important;
   text-transform:uppercase;
@@ -164,10 +165,10 @@ html {
 
 h2 {
   margin-left: auto;
-  margin-top: 50px;
-  text-align: left;
-  font-weight: 100;
-  font-size: 2.8em;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.8em;
   color: #5d7a8a;
 }
 
@@ -192,6 +193,11 @@ h2 {
 
 .playground_map .playground_info .icon {
   color:#ffb526;
+}
+
+.playground_map .playground_info h6 {
+  text-align: left;
+  color:#5d7a8a;
 }
 
 .playground_map {
@@ -229,101 +235,174 @@ h2 {
 
 /*/////////////////////////// CARD GRID ///////////////////////*/
 
-.playground-card {
-  margin: 50px 20px;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  width: 100%;
-  text-align: center;
-  height:468px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.playground-card .background-block {
-  float: left;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-.playground-card .background-block .background {
-  width:150px;
-  height: 150px;
-  vertical-align: top;
-  opacity: 0.9;
-  filter: blur(0.5px);
-  transform: scale(2.8);
-}
-.playground-card .card-content {
-  width: 100%;
-  padding: 30px 25px;
-  color:#232323;
-  float:left;
-  background:#efefef;
-  height:60%;
-  border-radius:0 0 5px 5px;
-  position: relative;
-  z-index: 9999;
-}
-.playground-card .card-content::before {
-  content: '';
-  background: #efefef;
-  width: 120%;
-  height: 100%;
-  left: 11px;
-  bottom: 51px;
+/*@import url('https://fonts.googleapis.com/css?family=Abel');*/
+
+/*html, body {*/
+/*  background: #FCEEB5;*/
+/*  font-family: Abel, Arial, Verdana, sans-serif;*/
+/*}*/
+
+.center {
   position: absolute;
-  z-index: -1;
-  transform: rotate(-13deg);
-}
-.profile {
-  border-radius: 50%;
-  position: absolute;
-  bottom: 65%;
+  top: 50%;
   left: 50%;
-  max-width: 100px;
-  opacity: 1;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(255, 255, 255, 1);
-  /*-webkit-transform: translate(-50%, 0%);*/
-  transform: translate(-50%, 0%);
-  z-index:99999;
-}
-.playground-card h2 {
-  margin: 0 0 5px;
-  font-weight: 600;
-  font-size:25px;
-}
-.playground-card h2 small {
-  display: block;
-  font-size: 15px;
-  margin-top:10px;
-}
-.playground-card i {
-  display: inline-block;
-  font-size: 16px;
-  color: #232323;
-  text-align: center;
-  border: 1px solid #232323;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  margin:0 5px;
-}
-.playground-card .icon-block{
-  float:left;
-  width:100%;
-  margin-top:15px;
-}
-.playground-card .icon-block a{
-  text-decoration:none;
-}
-.playground-card i:hover {
-  background-color:#232323;
-  color:#fff;
-  text-decoration:none;
+  -webkit-transform: translate(-50%, -50%);
 }
 
+.card {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  /*float: left;*/
+  overflow: hidden;
+  position: relative;
+  margin: 50px 20px;
+}
+
+.card.green .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(#92bCa6, #A2CCB6);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+/*.card .additional .more-info h1 {*/
+/*  color: #fff;*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+.card.green .additional .more-info h6 {
+  text-align: center;
+  color: #000000;
+}
+
+.card.green .additional .more-info h2 {
+  text-align: center;
+  color: #224C36;
+}
+
+.card.green .additional .coords {
+  margin: 0 1rem;
+  color: #325C46;
+  font-size: 1rem;
+}
+
+.card .additional .coords span + span {
+  float: right;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.card.green .additional .stats {
+  color: #5d7a8a;
+}
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1rem;
+  margin-right: 25px;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
 
 
 /*/////////////////////////// FOOTER ///////////////////////*/

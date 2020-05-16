@@ -1,36 +1,70 @@
 {% extends 'base.html' %}
 {% block content %}
         
-<container>
-	<div class="row">
-     {% for playground in playgrounds %}
+<div class="container">
+  <div class="row">
+    {% for playground in playgrounds %}
      
-    	<div class="col-sm-12 col-md-4">
-    		    <div class="card playground-card">
-    		        <div class="background-block">
-    		            <img src="{{ playground.image_url }}" alt="playground_image" class="background"/>
-    		        </div>
-    		        <div class="profile">
-    		            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
-    		        </div>
-    		        <div class="card-content">
-                    	<h3>{{ playground.playground_name }}</h3>
-                    	<h6>{{ playground.borough_name }}</h6>
-                    	<button type="submit" class="btn btn-outline-info">
-                    	<a href="{{url_for('show_playground', playground_id=playground._id)}}">Playground Details</a>
-                    	</button>
-                    	<div class="icon-block">
-                    		<a href="#"><i class="fa fa-facebook"></i></a>
-                    		<a href="#"> <i class="fa fa-twitter"></i></a>
-                    		<a href="#"> <i class="fa fa-google-plus"></i></a>
-                    	</div>
-                    </div>
-                </div>
-                <!--<p class="mt-3 w-100 float-left text-center"><strong>Playground Card</strong></p>-->
+        <div class="col-sm-12 col-md-6">
+
+  <div class="card green">
+    <div class="additional">
+      <div class="user-card">
+        <div class="level center">
+          Level 13
+        </div>
+        <div class="points center">
+          5,312 Points
+        </div>
+        
+      </div>
+      <div class="more-info">
+        <h3>{{ playground.playground_name }}</h3>
+        <h6>{{ playground.borough_name }}</h6>
+        
+        <div class="coords">
+          <span>Group Name</span>
+          <span>Joined January 2019</span>
+        </div>
+        <div class="coords">
+          <span>Position/Role</span>
+          <span>City, Country</span>
+        </div>
+        <div class="stats">
+          <div col-md-3>
+            <div class="title">Awards</div>
+            <i class="fa fa-trophy"></i>
+            <div class="value">2</div>
+          </div>
+          <div col-md-3>
+            <div class="title">Matches</div>
+            <i class="fa fa-gamepad"></i>
+            <div class="value">27</div>
+          </div>
+          <div col-md-3>
+            <div class="title">Pals</div>
+            <i class="fa fa-group"></i>
+            <div class="value">123</div>
+          </div>
+          <div col-md-3>
+            <div class="title">Coffee</div>
+            <i class="fa fa-coffee"></i>
+            <div class="value infinity">∞</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="general">
+      <h1>Jane Doe</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar.</p>
+      <span class="more">Mouse over the card for more info</span>
+    </div>
+  </div>
+            
     	</div>
     	{% endfor %}
-   </div>   
-</container>   
+  </div>   
+</div>   
 	 
 {% endblock %}
 
