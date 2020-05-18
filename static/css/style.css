@@ -2,13 +2,45 @@
 
 html {
   font-family: 'Roboto', serif;
-  font-size: 0.9rem;
+  font-size: 1em;
 }
 
 .container {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+/*/////////////////////////// TEXT & PARAGRAPHS CSS //////////////////// */
+
+h2 {
+  margin-left: auto;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.5em;
+  color: #5d7a8a;
+}
+
+h3 {
+  margin-left: auto;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 600;
+  color: #000000;
+}
+
+h6 {
+  margin-left: auto;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #5d7a8a;
+}
+
 
 /*/////////////////////////// BUTTONS //////////////////// */
 
@@ -102,6 +134,48 @@ html {
 
 /*/////////////////////////// NAV BAR ///////////////////////*/
 
+.nav-item {
+  /*background: #0D757D;*/
+  /*width: 100%;*/
+  min-height: 10px;
+  line-height: 10px;
+  font-size: 1em;
+  font-weight: normal;
+  color: rgba(0,0,0,.4);
+  margin: 0.5em auto;
+}
+
+
+.nav-item::after {
+     content: '';
+     display: block;
+     width: 0px;
+     height: 2px;
+     /*margin-bottom: 20px;*/
+     background: #fec400;
+     transition: 0.4s
+ }
+
+ .nav-item:hover::after {
+     width: 100%
+ }
+
+ .navbar-light .navbar-nav .active>.nav-link,
+ .navbar-light .navbar-nav .nav-link.active,
+ .navbar-light .navbar-nav .nav-link.show,
+ .navbar-light .navbar-nav .show>.nav-link,
+ .navbar-light .navbar-nav .nav-link:focus,
+ .navbar-light .navbar-nav .nav-link:hover {
+     color: #fec400
+ }
+
+ .nav-link {
+     padding: 15px 5px;
+     transition: 0.2s
+ }
+
+
+
 .navbar-brand {
   margin-top:-5px;
   margin-left:20px;
@@ -163,15 +237,6 @@ html {
 	border-color: #aaaaaa;
 }
 
-h2 {
-  margin-left: auto;
-  margin-top: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.8em;
-  color: #5d7a8a;
-}
-
 /*Styling for form inputs*/
 .form-label {
 	font-size: 12px;
@@ -191,43 +256,44 @@ h2 {
 /*    background-color: grey;*/
 /*   }*/
 
-.playground_map .playground_info .icon {
+.playground-map .playground-info .icon {
   color:#ffb526;
 }
 
-.playground_map .playground_info h6 {
-  text-align: left;
-  color:#5d7a8a;
-}
-
-.playground_map {
+.playground-map {
   margin-top:50px;
   padding-bottom:100px;
 }
 
-.playground_map .playground_info {
+.playground-map .playground-info {
   margin-bottom:20px;
   border-bottom:1px solid #e4e4e4;
   padding-bottom:30px;
 }
 
-.playground_map .info {
+.playground-map .info {
   margin-bottom:20px;
   border-bottom:1px solid #e4e4e4;
   padding-bottom:20px;
   color:#636363;
 }
 
-.playground_map .user_playground_images h4 {
-  margin-bottom:30px;
+.playground-map .user-playground-images .photos-title {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
-.playground_map .user_playground_images .image {
+.playground-map .user-playground-images .image {
   margin-bottom:15px;
   box-shadow:0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-.playground_map #map {
+.playground-map #map {
   height: 300px;
   margin-bottom: 20px;
 }
@@ -324,12 +390,12 @@ h2 {
 /*  margin-bottom: 0;*/
 /*}*/
 
-.card.green .additional .more-info h6 {
+.card .green .additional .more-info h6 {
   text-align: center;
   color: #000000;
 }
 
-.card.green .additional .more-info h2 {
+.card .green .additional .more-info h2 {
   text-align: center;
   color: #224C36;
 }
