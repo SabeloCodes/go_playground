@@ -50,6 +50,16 @@ h6 {
   color: #5d7a8a;
 }
 
+h7 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
 
 /*/////////////////////////// BUTTONS //////////////////// */
 
@@ -288,15 +298,15 @@ h6 {
   color:#636363;
 }
 
-.playground-map .user-playground-images .photos-title {
-  display: block;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #000000;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
+/*.playground-map .user-playground-images .photos-title {*/
+/*  display: block;*/
+/*  font-size: 1.5em;*/
+/*  font-weight: bold;*/
+/*  color: #000000;*/
+/*  text-align: left;*/
+/*  margin-top: 10px;*/
+/*  margin-bottom: 25px;*/
+/*}*/
 
 .playground-map .user-playground-images .image {
   margin-bottom:15px;
