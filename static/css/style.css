@@ -2,7 +2,7 @@
 
 @font-face {
   src: url(/static/fonts/look-up.ttf);
-  font-family: 'loo-up';
+  font-family: 'look-up';
 }
 
 body {
@@ -265,7 +265,7 @@ h7 {
 
 /*Styling for form inputs*/
 .form-label {
-	font-size: 12px;
+	font-size: 16px;
 	color: #5e9bfc;
 	margin: 0;
 	display: block;
