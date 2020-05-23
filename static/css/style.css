@@ -1,8 +1,8 @@
 /*/////////////////////////// FONT CSS //////////////////// */
 
 @font-face {
-  src: url(/static/fonts/look-up.ttf);
-  font-family: 'look-up';
+  src: url(/static/fonts/OrangeMilk-L3AqD.otf);
+  font-family: 'orange-milk';
 }
 
 body {
@@ -203,17 +203,17 @@ h7 {
  }
 
 .navbar-brand {
-  margin-top:-5px;
-  margin-left:20px;
-  font-family: 'look-up';
-  font-size:30px;
-  /*font-weight:bold;*/
-  color:#f44242 !important;
-  text-transform:uppercase;
-  /*text-shadow:  -1px -1px 0 #000,*/
-		/*            1px -1px 0 #000,*/
-		/*            -1px 1px 0 #000,*/
-		/*            1px 1px 0 #000;*/
+  margin-top: -5px;
+  margin-left: 20px;
+  font-family: 'orange-milk';
+  font-size: 50px;
+  font-weight: 600;
+  color:#F99A9A !important;
+  text-transform: capitalize;
+  text-shadow:  -1px -1px 0 #f44242,
+		            1px -1px 0 #f44242,
+		            -1px 1px 0 #f44242,
+		            1px 1px #f44242;
 }
 
 
