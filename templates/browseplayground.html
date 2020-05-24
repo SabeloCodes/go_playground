@@ -22,13 +22,12 @@
     
   </div>
   <div class="row"> 
-  <a href="{{ playground.image_url }}"><img class="card-img" src="{{ playground.image_url }}">
+  <img class="card-img" src="{{ playground.image_url }}">
      <div class="card-img-hover"></div>
-   </a>
   <div class="card-info">
     <h3 class="card-category">{{ playground.playground_name }}</h3>
-    <p class="card-title"> {{ playground.playground_description }}</p>
-    <span class="card-by"> <a href="{{url_for('show_playground', playground_id=playground._id)}}" class="card-author" title="author">Playground Details</a></span>
+    <p class="card-description"> {{ playground.playground_description }}</p>
+    <span class="card-playground-details"> <a href="{{url_for('show_playground', playground_id=playground._id)}}" class=".card-author" title="details">Playground Details</a></span>
   </div>
   </div>
 </article>
