@@ -10,13 +10,13 @@
   <section>
 <article class="card playground-card">
   <div class="card-info-hover">
-    <svg class="card-like"  viewBox="0 0 24 24">
+    <div class="card-like"  viewBox="0 0 24 24">
         <i class="far fa-heart"></i>
-    </svg>
+    </div>
       <div class="card-clock-info">
-        <svg class="card-clock"  viewBox="0 0 24 24">
+        <div class="card-clock"  viewBox="0 0 24 24">
             <i class="fas fa-map-marker-alt"></i>        
-        </svg>
+        </div>
         <h6 class="card-borough">{{ playground.borough_name }}</h6>
       </div>
     
@@ -27,7 +27,7 @@
   <div class="card-info">
     <h3 class="card-category">{{ playground.playground_name }}</h3>
     <p class="card-description"> {{ playground.playground_description }}</p>
-    <span class="card-playground-details"> <a href="{{url_for('show_playground', playground_id=playground._id)}}" class=".card-author" title="details">Playground Details</a></span>
+    <span class="card-playground-details"> <a href="{{url_for('show_playground', playground_id=playground._id)}}" title="details">Playground Details...</a></span>
   </div>
   </div>
 </article>
