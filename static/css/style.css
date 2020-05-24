@@ -304,7 +304,6 @@ h7 {
 }
 
 .description p {
-  /*position: absolute;*/
   width: 450px;
   height: auto;
   margin-bottom:20px;
@@ -331,7 +330,7 @@ h7 {
   width: 18px;
 }
 
-.card-clock {
+.card-borough {
   width: 15px;
   vertical-align: middle;
   fill: #AD7D52;
@@ -344,7 +343,7 @@ h7 {
   margin-left: 5px;
 }
 
-.card-clock-info {
+.card-borough-info {
   float: right;
 }
 

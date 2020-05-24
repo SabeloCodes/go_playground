@@ -13,8 +13,8 @@
     <div class="card-like"  viewBox="0 0 24 24">
         <i class="far fa-heart"></i>
     </div>
-      <div class="card-clock-info">
-        <div class="card-clock"  viewBox="0 0 24 24">
+      <div class="card-brough-info">
+        <div class="card-borough"  viewBox="0 0 24 24">
             <i class="fas fa-map-marker-alt"></i>        
         </div>
         <h6 class="card-borough">{{ playground.borough_name }}</h6>
@@ -23,7 +23,9 @@
   </div>
   <div class="row"> 
   <img class="card-img" src="{{ playground.image_url }}">
-     <div class="card-img-hover"></div>
+     <div class="card-img-hover">
+       <img src="{{ playground.image_url }}">
+     </div>
   <div class="card-info">
     <h3 class="card-category">{{ playground.playground_name }}</h3>
     <p class="card-description"> {{ playground.playground_description }}</p>
