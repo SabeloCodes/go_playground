@@ -4,6 +4,8 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
 app = Flask(__name__)
+if os.path.exists('env.py'):
+    import env
 
 # Reading the environment vairable set on the .bash hidden file with Mongo Collection Name and Connection 
 app.config["MONGO_DBNAME"] = 'go_playground'
@@ -112,8 +114,8 @@ def delete_playground(playground_id):
     mongo.db.playgrounds.remove({'_id': ObjectId(playground_id)})
     return redirect(url_for('browse_playground'))
     
-    
+
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
+    app.run(host=os.environ.get('IP', '0.0.0.0'),
+            port=int(os.environ.get('PORT', '5000')),
             debug=True)
