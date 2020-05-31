@@ -224,26 +224,18 @@ h7 {
 /*/////////////////////////// SEARCH BOX CSS //////////////////// */
 
 .search-sec {
-  padding: 1em;
+  padding: 1em 10em 0 10em;
   margin-top: 1em;
 }
 
 @media (min-width: 992px){
   .search-sec{
     position: relative;
-    top: -104px;
-    background: rgba(72,116,191,0.51);
+    top: -100px;
+    opacity: 0.5;
+    /* background: rgba(72,116,191,0.51); */
   }
 }
-
-@media (max-width: 992px){
-  .search-sec{
-    position: relative;
-    top: -104px;
-    background: rgba(72,116,191,0.51);
-  }
-}
-
 
 /*/////////////////////////// FORM ///////////////////////*/
 
@@ -273,30 +265,30 @@ h7 {
 /*/////////////////////////// MAP ///////////////////////*/
 
  /* Set the size of the div element that contains the map */
-/*  #map {*/
-    /*height: 400px;  /* The height is 400 pixels
-    /*width: 100%;  /* The width is the width of the web page
-/*    background-color: grey;*/
-/*   }*/
+ .playground-map {
+    height: 400px;  
+    width: 100%;  
+    background-color: grey;
+}
 
 
 
-.playground-map .playground-info .icon {
+.playground-single .playground-info .icon {
   color:#ffb526;
 }
 
-.playground-map {
+.playground-single  {
   margin-top:50px;
   padding-bottom:100px;
 }
 
-.playground-map .playground-info {
+.playground-single  .playground-info {
   margin-bottom:20px;
   /*border-bottom:1px solid #e4e4e4;*/
   padding-bottom:30px;
 }
 
-.playground-map {
+.playground-single {
   position: inherit;
   width: auto;
   margin-bottom:20px;
@@ -314,12 +306,12 @@ h7 {
   color:#403E3D;
 }
 
-.playground-map .user-playground-images .image {
+.playground-single .user-playground-images .image {
   margin-bottom:15px;
   box-shadow:0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-.playground-map #map {
+.playground-single #map {
   height: 300px;
   margin-bottom: 20px;
 }

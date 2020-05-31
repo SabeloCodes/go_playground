@@ -10,13 +10,13 @@ $(document).ready(function(){
 /*========================== MAP ==================================*/
 // Initialize and add the map
 function initMap() {
-  // The location of Brockwell Park
-  var brockwell = {lat: 51.450476, lng: -0.106252}; 
-  // The map, centered at Brockwell Park
+  // The location of the park
+  var park = {lat: {{playground.lat}}, lng: {{playground.lng}} }; 
+  // The map, centered at the park
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 15, center: brockwell});
-  // The marker, positioned at Brockwell Park
-  var marker = new google.maps.Marker({position: brockwell, map: map});
+      document.getElementById('map'), {zoom: 15, center: {lat: {{playground.lat}}, lng: {{playground.lng}} }});
+  // The marker, positioned at the respective park
+  var marker = new google.maps.Marker({position: {lat: {{playground.lat}}, lng: {{playground.lng}} }, map: map});
   
   // The info window, when marker is clicked
   var contentString = '<div class="info-window">' +
