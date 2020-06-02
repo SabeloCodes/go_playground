@@ -11,12 +11,12 @@ $(document).ready(function(){
 // Initialize and add the map
 function initMap() {
   // The location of the park
-  var park = {lat: {{playground.lat}}, lng: {{playground.lng}} }; 
+  var park = {lat: lat, lng: lng }; 
   // The map, centered at the park
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 15, center: {lat: {{playground.lat}}, lng: {{playground.lng}} }});
+      document.getElementById('map'), {zoom: 15, center: {lat: lat, lng: lng }});
   // The marker, positioned at the respective park
-  var marker = new google.maps.Marker({position: {lat: {{playground.lat}}, lng: {{playground.lng}} }, map: map});
+  var marker = new google.maps.Marker({position: {lat: lat, lng: lng}, map: map});
   
   // The info window, when marker is clicked
   var contentString = '<div class="info-window">' +

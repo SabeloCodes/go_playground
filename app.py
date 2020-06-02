@@ -27,7 +27,7 @@ def find_playground():
 def add_playground():
     return render_template("addplayground.html", 
                             playgrounds = mongo.db.playgrounds.find(),
-                            boroughs = mongo.db.boroughs.find()) 
+                            boroughs = mongo.db.boroughs.find())
 
 # Function for adding a playground to the database                            
 @app.route('/insert_playground', methods=['POST'])

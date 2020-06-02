@@ -240,8 +240,8 @@ h7 {
 /*/////////////////////////// FORM ///////////////////////*/
 
 .form-control {
-	border-radius: 0;
-	border-color: #aaaaaa;
+  border-radius: 0;
+  border-color: #aaaaaa;
   border-width: 0 0 2px 0;
   border-style: none none solid none;
   box-shadow: none;
