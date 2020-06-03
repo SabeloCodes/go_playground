@@ -26,8 +26,8 @@
             <label for="borough_name" class="form-label">Borough</label>
               <select class="form-control" name="borough_name" id="borough_name">
                 <option disabled selected>Choose a borough</option>
-                {% for playground in playgrounds %}
-                  <option value="{{ playground.borough_name }} "> {{ playground.borough_name }} </option>
+                {% for borough in boroughs %}
+                  <option value="{{ borough.borough_name }} "> {{ borough.borough_name }} </option>
                 {% endfor %}
               </select>
           </div>
@@ -44,8 +44,8 @@
         
         <div class="row">
           <div class="form-group col-lg-12">
-            <label for="addImage" class="form-label">Images</label>
-            <input type="text" class="form-control" id="playground_image" name="playground_image" aria-describedby="" placeholder="Enter Image URL">
+            <label for="image_url" class="form-label">Images</label>
+            <input type="text" class="form-control" id="image_url" name="image-url" aria-describedby="" placeholder="Enter Image URL">
           </div>
         </div>
         
@@ -66,6 +66,7 @@
           </div>
         </div>
         </div>
+
       </form>
     </div>
   </div>
