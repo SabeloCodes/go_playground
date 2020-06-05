@@ -29,12 +29,16 @@ def add_playground():
                             playgrounds = mongo.db.playgrounds.find(),
                             boroughs = mongo.db.boroughs.find())
 
+
 # Function for adding a playground to the database                            
 @app.route('/insert_playground', methods=['POST'])
 def insert_playground():
     playgrounds = mongo.db.playgrounds
-    playgrounds.insert_one(request.form.to_dict())
-    return redirect(url_for('show_playground'))     
+    playground = playgrounds.insert_one(request.form.to_dict())
+    print(playground)
+    return redirect(url_for('show_playground', playground_id=playground.inserted_id)) 
+
+    
     
 # Function for displaying the showplayground.html page    
 @app.route('/show_playground/<playground_id>')
@@ -49,9 +53,9 @@ def show_playground(playground_id):
 def edit_playground(playground_id):
     """Gets playground that matches the playground id '_id' is the key""" 
     the_playground =  mongo.db.playgrounds.find_one({"_id": ObjectId(playground_id)})
-    all_playgrounds =  mongo.db.playgrounds.find()
+    all_boroughs =  mongo.db.boroughs.find()
     return render_template('editplayground.html', playground=the_playground,
-                           playgrounds=all_playgrounds)
+                           boroughs=all_boroughs)
 
 
 #Database updates with edited info 

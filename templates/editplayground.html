@@ -27,11 +27,11 @@
             <label for="borough_name" class="form-label">Borough</label>
               <select class="form-control" name="borough_name" id="borough_name">
                  <option disabled selected>Choose a borough</option>
-                      {% for p in playgrounds %}
-                     {% if p.borough_name == playground.borough_name %}
-                     <option value="{{ p.borough_name }}" selected> {{ p.borough_name }} </option>
+                      {% for borough in boroughs %}
+                     {% if borough.borough_name == playground.borough_name %}
+                     <option value="{{ borough.borough_name }}" selected> {{ borough.borough_name }} </option>
                      {% else %}
-                     <option value="{{ p.borough_name }}"> {{ p.borough_name }} </option>
+                     <option value="{{ borough.borough_name }}"> {{ borough.borough_name }} </option>
                    {% endif %}
                  {% endfor %}
               </select>
@@ -54,12 +54,12 @@
           </div>
         </div>
         
-        <div class="row">
+        <!-- <div class="row">
           <div class="custom-checkbox form-group col-lg-12">
               <input type="checkbox" class="custom-control-input" id="checkTerms">
               <label class="custom-control-label form-label" for="checkTerms">I have read and understood the Terms & Conditions.</label>
           </div>
-        </div>
+        </div> -->
         </div>
         
         <div class="col-lg-12">
