@@ -318,7 +318,6 @@ h7 {
 	box-sizing: border-box;
 }
 
-
 .form-control {
   border-radius: 0;
   border-color: #aaaaaa;
@@ -332,11 +331,10 @@ h7 {
 	border-color: #5d7a8a;
 }
 
-
 /*Styling for form inputs*/
 .form-label {
 	font-size: 16px;
-	color: #2f323a;
+	color: #5d7a8a;
 	margin: 0;
 	display: block;
 	opacity: 1;
