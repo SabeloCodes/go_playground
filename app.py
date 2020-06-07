@@ -30,15 +30,13 @@ def add_playground():
                             boroughs = mongo.db.boroughs.find())
 
 
-# Function for adding a playground to the database                            
+# Function for submitting playground form to the database                            
 @app.route('/insert_playground', methods=['POST'])
 def insert_playground():
     playgrounds = mongo.db.playgrounds
     playground = playgrounds.insert_one(request.form.to_dict())
-    print(playground)
     return redirect(url_for('show_playground', playground_id=playground.inserted_id)) 
 
-    
     
 # Function for displaying the showplayground.html page    
 @app.route('/show_playground/<playground_id>')
