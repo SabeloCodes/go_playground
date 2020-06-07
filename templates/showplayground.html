@@ -47,14 +47,14 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <a href= "{{url_for('edit_playground', playground_id=playground._id)}}" class="btn btn-block btn-edit" role="button" aria-pressed="true">
-                                EDIT
+                            <a href= "{{url_for('edit_playground', playground_id=playground._id)}}" class="btn-edit" role="button" aria-pressed="true">
+                                <span> EDIT <i class="far fa-edit"></i> <span>
                             </a> 
                         </div>
                         <div class="col-md-6">
-                            <a href= "{{url_for('edit_playground', playground_id=playground._id)}}" class="btn btn-block btn-delete" role="button" aria-pressed="true">
-                                DELETE
-                            </a> 
+                            <a href= "{{url_for('edit_playground', playground_id=playground._id)}}" class=" btn-delete" role="button" aria-pressed="true">
+                                <span> DELETE <i class="far fa-trash-alt"></i> </span>
+                            </a>
                         </div>
                     </div>
                 </div>

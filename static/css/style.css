@@ -30,6 +30,7 @@ h2 {
   margin-left: auto;
   margin-top: 20px;
   text-align: center;
+  text-transform: uppercase; 
   font-weight: 800;
   font-size: 2.5em;
   color: #5d7a8a;
@@ -68,71 +69,137 @@ h7 {
 
 /*/////////////////////////// BUTTONS //////////////////// */
 
-.btn-edit {
-  background: #ffffff;
-  border: 1px solid #2f323a;
-  border-radius: 3px;
-  color: #2f323a;
-  font-size: 16px;
-  line-height: inherit;
-  padding: 10px 50px;
-  text-align: center;
-  display: block;
-  margin:20px 0 80px 0;
-  text-transform: uppercase;
-  transition: all 0.25s ease 0s;
-
-}
-
-.btn-edit:hover,.btn-edit:active, .btn-edit:focus {
-	border-color: #0e367c;
-	color: #ffffff;
-	background-color: #0e367c;
-}
-
-.btn-delete {
-	background: #ffffff;
-  border: 1px solid #2f323a;
-  border-radius: 3px;
-  color: #2f323a;
-  font-size: 16px;
-  line-height: inherit;
-  padding: 10px 50px;
-  text-align: center;
-  display: block;
-  margin:20px 0 80px 0;
-  text-transform: uppercase;
-  transition: all 0.25s ease 0s;
-}
-
-.btn-delete:hover,.btn-delete:active, .btn-delete:focus {
-	border-color: #f44242;
-	color: #ffffff;
-	background-color: #f44242;
-}
-
+/* SUBMIT BUTTON */
 .btn-submit {
-	background: #ffffff;
-  border: 1px solid #2f323a;
-  border-radius: 3px;
-  color: #2f323a;
-  font-size: 16px;
-  line-height: inherit;
-  padding: 10px 50px;
-  text-align: center;
+  border: none;
+  border-radius: 5px;
   display: block;
-  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
   text-transform: uppercase;
-  transition: all 0.25s ease 0s;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #2f323a;
+  font-weight: 600px;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 10px 60px;
+  margin: 20px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.40);
 }
 
-.btn-submit:hover,.btn-submit:active, .btn-submit:focus {
-	border-color: #4874bf;
-	color: #ffffff;
-	background-color: #4874bf;
+.btn-submit span {
+  position: relative; 
+  z-index: 1;
 }
 
-.btn-outline-info{
+.btn-submit:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 590%;
+  width: 140%;
+  background: #4874bf;
+  transition: all .5s ease-in-out;
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn-submit:hover:after {
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+/* EDIT BUTTON */
+.btn-edit {
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 400px;
+  text-align: center;
+  text-decoration: none; 
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #2f323a;
+  font-weight: 600px;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 10px 60px;
+  margin: 20px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.40);
+}
+
+.btn-edit span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btn-edit:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1100%;
+  width: 120%;
+  background: #0e367c;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn-edit:hover:after {
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+/* DELETE BUTTON */
+.btn-delete {
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 400px;
+  text-align: center;
+  text-decoration: none; 
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #2f323a;
+  font-weight: 600px;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 10px 60px;
+  margin: 20px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.40);
+}
+
+.btn-delete span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btn-delete:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1100%;
+  width: 120%;
+  background: #f44242;
+  transition: all .5s ease-in-out;
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn-delete:hover:after {
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+/* .btn-outline-info{
 	background: #ffffff;
   border: 1px solid #2f323a;
   border-radius: 3px;
@@ -150,7 +217,7 @@ h7 {
 .btn-outline-info:hover,.btn-outline-info:active, .btn-outline-info:focus {
 	border-color: #4874bf;
 	color: #ffffff;
-	background-color: #4874bf;
+	background-color: #4874bf; */
 }
 
 
@@ -239,6 +306,19 @@ h7 {
 
 /*/////////////////////////// FORM ///////////////////////*/
 
+/* Styling for form border */
+.form-border {
+	background: #fff;
+	width: 80%;
+	height: 600px;
+	border-radius: 5px;
+	padding: 30px 20px;
+    margin: 30px auto;
+	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+	box-sizing: border-box;
+}
+
+
 .form-control {
   border-radius: 0;
   border-color: #aaaaaa;
@@ -249,13 +329,14 @@ h7 {
 
 .form-control:focus {
 	box-shadow: none;
-	border-color: #aaaaaa;
+	border-color: #5d7a8a;
 }
+
 
 /*Styling for form inputs*/
 .form-label {
 	font-size: 16px;
-	color: #5e9bfc;
+	color: #2f323a;
 	margin: 0;
 	display: block;
 	opacity: 1;
