@@ -17,6 +17,10 @@ body {
 
 /*/////////////////////////// TEXT & PARAGRAPHS CSS //////////////////// */
 
+a {
+    text-decoration: none;
+}
+
 p {
   width: 500px;
   height: 100px;
@@ -299,8 +303,8 @@ h7 {
   .search-sec{
     position: relative;
     top: -100px;
-    opacity: 0.5;
-    /* background: rgba(72,116,191,0.51); */
+    opacity: 0.8;
+    background:none;
   }
 }
 
