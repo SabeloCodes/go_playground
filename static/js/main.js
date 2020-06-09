@@ -1,4 +1,4 @@
-/*==========================INITIALIZE CAROUSEL =================================*/
+/*========================== INITIALIZE CAROUSEL =================================*/
 
 
 $(document).ready(function(){
@@ -7,7 +7,19 @@ $(document).ready(function(){
     });
 });
 
+/*========================== CARD HOVER =================================*/
+
+$('.card').hover(
+    function(){
+        $(this).find('.bottom').stop().slideDown();
+    },
+    function(){
+        $(this).find('.bottom').slideUp();
+    }
+);
+
 /*========================== MAP ==================================*/
+
 // Initialize and add the map
 function initMap() {
   // The location of the park
