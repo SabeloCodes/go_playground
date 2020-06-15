@@ -38,7 +38,7 @@ def insert_playground():
     return redirect(url_for('show_playground', playground_id=playground.inserted_id)) 
 
     
-# Function for displaying the showplayground.html page    
+# Function displaying showplayground.html with individual playground details    
 @app.route('/show_playground/<playground_id>')
 def show_playground(playground_id):
     """Retrieving the playground and sending it through to the template"""
@@ -68,7 +68,10 @@ def update_playground(playground_id):
         'borough_name': request.form.get('borough_name'),
         'playground_description': request.form.get('playground_description'),
         'star_rating': request.form.get('star_rating'),
-        'image_url': request.form.get('image_url')
+        'image_urls': request.form.get('image_url'),
+        'image_urls': request.form.get('img1_url'),
+        'image_urls': request.form.get('img2_url'),
+        'image_urls': request.form.get('img3_url')
     })
     return redirect(url_for('show_playground'))
 
