@@ -22,40 +22,76 @@ $('.card').hover(
 
 // Initialize and add the map
 function initMap() {
-  // The location of the park
+  
+    // The location of the park
   var park = {lat: lat, lng: lng }; 
+  
   // The map, centered at the park
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 15, center: {lat: lat, lng: lng }});
-  // The marker, positioned at the respective park
-  var marker = new google.maps.Marker({position: {lat: lat, lng: lng}, map: map});
+  
+      // The marker, positioned at the respective park
+  var marker = new google.maps.Marker({
+      position: {lat: lat, lng: lng}, map: map
+    });
   
   // The info window, when marker is clicked
-  var contentString = '<div class="info-window">' +
-                '<h3>Playground Info Window </h3>' +
+  var infoWindowContent = '<div class="info-window">' +
+                '<h7>Playground Info Window </h7>' +
                 '<div class="info-content">' +
                 '<p> Write up some information about the park being reviewed</p>' +
                 '</div>' +
                 '</div>';
 
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
+        var infoWindow = new google.maps.InfoWindow({
+            content: infoWindowContent,
             maxWidth: 400
         });
 
         marker.addListener('click', function () {
-            infowindow.open(map, marker);
+            infoWindow.open(map, marker);
         });
   
 }
 
+/*========================== GEOCODE ==================================*/
 
-/*========================== FORM ==================================*/
+// Get location form
+    var locationForm = document.getElementById('location-form');
 
-// $('#star_rating') .slider({
-// 	formatter: function(value) {
-// 		return 'Current value: ' + value;
-// 	}
-// });
+// Listen for submit
+    locationForm.addEventListener('submit', geocode);
+
+//  Call geocode
+function geocode(){
+    var location = document.getElementById('playground-location-name').value;
+    axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
+        params:{
+            address: location,
+            key: 'AIzaSyC_iIuIMWhGyUTv7dpFHU7PNKYBlW8E8dc'
+
+        }
+    })
+    .then(function(response){
+        //Log full response
+        console.log(response);
+
+        // Geometry
+        var lat = response.data.results[0].geometry.location.lat;
+        var lng = response.data.results[0].geometry.location.lng;
+        var geometryOutput = `
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Latitude</strong>: ${lat}</li>
+            <li class="list-group-item"><strong>Longitude</strong>: ${lng}</li>
+          </ul>
+        `;
+    })
+    .catch(function(error){
+        console.log(error)
+    });
+}
+
+
+
 
 
