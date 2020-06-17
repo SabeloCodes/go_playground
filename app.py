@@ -73,7 +73,7 @@ def update_playground(playground_id):
         'image_urls': request.form.get('img2_url'),
         'image_urls': request.form.get('img3_url')
     })
-    return redirect(url_for('show_playground'))
+    return redirect(url_for('show_playground', playground_id=playground_id))
 
 
 # Function and route to display/browse all playgrounds but filter by borough_name

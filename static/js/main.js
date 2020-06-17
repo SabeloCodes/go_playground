@@ -62,9 +62,17 @@ function initMap() {
 // Listen for submit
     locationForm.addEventListener('submit', geocode);
 
+ // Prevent form from being submitted
+document.getElementById("location-form").addEventListener("click", function(event){
+  event.preventDefault()
+});   
+
+// Submit form
+    document.getElementById("location-form").submit();
+
 //  Call geocode
 function geocode(){
-    var location = document.getElementById('playground-location-name').value;
+    var location = document.getElementById('location-name').value;
     axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
         params:{
             address: location,
@@ -80,16 +88,18 @@ function geocode(){
         var lat = response.data.results[0].geometry.location.lat;
         var lng = response.data.results[0].geometry.location.lng;
         var geometryOutput = `
-          <ul class="list-group">
-            <li class="list-group-item"><strong>Latitude</strong>: ${lat}</li>
-            <li class="list-group-item"><strong>Longitude</strong>: ${lng}</li>
-          </ul>
+            <input type="hidden" name="lat" id="geometry" Latitude: ${lat}>
+            <input type="hidden" name="lng" id="geometry" Longitude: ${lng}>
         `;
+
+        // Output to app
+        document.getElementById('geometry').innerHTML = geometryOutput;
     })
     .catch(function(error){
         console.log(error)
     });
 }
+
 
 
 
