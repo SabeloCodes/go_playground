@@ -23,14 +23,14 @@ $('.card').hover(
 // Initialize and add the map
 function initMap() {
   
-    // The location of the park
+  // The location of the park
   var park = {lat: lat, lng: lng }; 
   
   // The map, centered at the park
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 15, center: {lat: lat, lng: lng }});
   
-      // The marker, positioned at the respective park
+  // The marker, positioned at the respective park
   var marker = new google.maps.Marker({
       position: {lat: lat, lng: lng}, map: map
     });
@@ -60,26 +60,29 @@ function initMap() {
     var locationForm = document.getElementById('location-form');
 
 // Listen for submit
-    locationForm.addEventListener('submit', geocode);
+    // locationForm.addEventListener('submit', geocode);
+    document.getElementById("submit-playground").addEventListener('click', geocode)
 
- // Prevent form from being submitted
-document.getElementById("location-form").addEventListener("click", function(event){
-  event.preventDefault()
-});   
+// Prevent form from being submitted
+// 		document.getElementById("location-form").addEventListener("click", function(event){
+//   	event.preventDefault();
+// }); 
 
-// Submit form
-    document.getElementById("location-form").submit();
 
-//  Call geocode
+// Call geocode
 function geocode(){
+
+    console.log("testing");
+
     var location = document.getElementById('location-name').value;
     axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
         params:{
             address: location,
-            key: 'AIzaSyC_iIuIMWhGyUTv7dpFHU7PNKYBlW8E8dc'
-
+            key: 'AIzaSyAvJ8SKMHEjkJmZW5blhSqzEGllrkIG5cE'
         }
     })
+
+
     .then(function(response){
         //Log full response
         console.log(response);
@@ -87,16 +90,16 @@ function geocode(){
         // Geometry
         var lat = response.data.results[0].geometry.location.lat;
         var lng = response.data.results[0].geometry.location.lng;
-        var geometryOutput = `
-            <input type="hidden" name="lat" id="geometry" Latitude: ${lat}>
-            <input type="hidden" name="lng" id="geometry" Longitude: ${lng}>
-        `;
 
-        // Output to app
-        document.getElementById('geometry').innerHTML = geometryOutput;
+        // Geocode values
+        document.getElementById('lat').value = lat;
+        document.getElementById('lng').value = lng;
+
+        // Submit form
+        document.getElementById("location-form").submit()
     })
     .catch(function(error){
-        console.log(error)
+        console.log(error);
     });
 }
 
