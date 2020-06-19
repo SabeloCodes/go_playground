@@ -60,14 +60,7 @@ function initMap() {
     var locationForm = document.getElementById('location-form');
 
 // Listen for submit
-    // locationForm.addEventListener('submit', geocode);
-    document.getElementById("submit-playground").addEventListener('click', geocode)
-
-// Prevent form from being submitted
-// 		document.getElementById("location-form").addEventListener("click", function(event){
-//   	event.preventDefault();
-// }); 
-
+    document.getElementById("submit-playground").addEventListener('click', geocode);
 
 // Call geocode
 function geocode(){
