@@ -9,26 +9,26 @@
                 </div>
 
                 <div class="col-lg-6">
-                  <row>
-                    <div class="playground-info col-sm-12 col-lg-6">
-                        <h3>{{ playground.playground_name }}</h3>
-                        <h6>{{ playground.borough_name }}</h6>
+                    <row>
+                        <div class="playground-info col-sm-12 col-lg-6">
+                            <h3>{{ playground.playground_name }}</h3>
+                            <h6>{{ playground.borough_name }}</h6>
                             <div class="playground-icons">
                                 <i class="fas fa-coffee"></i>
                                 <i class="fas fa-restroom"></i>
                                 <i class="fas fa-dog"></i>
                             </div>
-                    </div>
+                        </div>
 
-                    <div class="description col-sm-12 col-lg-6">
-                        <p>
-                            {{ playground.playground_description }}
-                        </p>
-                    </div>
-                  </row>
+                        <div class="description col-sm-12 col-lg-6">
+                            <p>
+                                {{ playground.playground_description }}
+                            </p>
+                        </div>
+                    </row>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="user-playground-images">
@@ -47,12 +47,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <a href= "{{url_for('edit_playground', playground_id=playground._id)}}" class="btn-edit" role="button" aria-pressed="true">
+                            <a href="{{url_for('edit_playground', playground_id=playground._id)}}" class="btn-edit" role="button" aria-pressed="true">
                                 <span> EDIT <i class="far fa-edit"></i> <span>
-                            </a> 
+                            </a>
                         </div>
                         <div class="col-md-6">
-                            <a href= "{{url_for('edit_playground', playground_id=playground._id)}}" class="btn-delete" role="button" aria-pressed="true">
+                            <a href="{{url_for('edit_playground', playground_id=playground._id)}}" class="btn-delete" role="button" aria-pressed="true">
                                 <span> DELETE <i class="far fa-trash-alt"></i> </span>
                             </a>
                         </div>
@@ -63,9 +63,9 @@
     </div>
 </div>
 
- <script>
-        var lat = {{playground.lat}}
-        var lng = {{playground.lng}}
+<script>
+    var lat = {{playground.lat}}
+    var lng = {{playground.lng}}
 </script>
 
 {% endblock %}

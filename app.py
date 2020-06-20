@@ -67,12 +67,12 @@ def update_playground(playground_id):
         'playground_name': request.form.get('playground_name'),
         'borough_name': request.form.get('borough_name'),
         'playground_description': request.form.get('playground_description'),
-        'star_rating': request.form.get('star_rating'),
         'image_urls': request.form.get('image_url'),
         'image_urls': request.form.get('img1_url'),
         'image_urls': request.form.get('img2_url'),
         'image_urls': request.form.get('img3_url')
     })
+    print(playgrounds)
     return redirect(url_for('show_playground', playground_id=playground_id))
 
 

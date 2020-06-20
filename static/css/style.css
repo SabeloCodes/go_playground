@@ -98,6 +98,26 @@ h7 {
   z-index: 1;
 }
 
+
+.btn-submit:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 590%;
+  width: 140%;
+  background: #4874bf;
+  transition: all .5s ease-in-out;
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn-submit:hover:after {
+ text-decoration : none;
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+/* READ BUTTON */
 .btn-read {
   border: none;
   border-radius: 5px;
@@ -122,8 +142,7 @@ h7 {
   z-index: 1;
 }
 
-
-.btn-submit:after {
+.btn-read:after {
   content: "";
   position: absolute;
   left: 0;
@@ -135,9 +154,11 @@ h7 {
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
 
-.btn-submit:hover:after {
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+.btn-read:hover:after {
+text-decoration : none;
+transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+
 
 /* EDIT BUTTON */
 .btn-edit {
