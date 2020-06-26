@@ -43,6 +43,7 @@ def insert_playground():
 def show_playground(playground_id):
     """Retrieving the playground and sending it through to the template"""
     the_playground =  mongo.db.playgrounds.find_one({"_id": ObjectId(playground_id)})
+    print(the_playground)
     return render_template('showplayground.html', playground=the_playground)
   
                             
@@ -72,7 +73,6 @@ def update_playground(playground_id):
         'image_urls': request.form.get('img2_url'),
         'image_urls': request.form.get('img3_url')
     })
-    print(playgrounds)
     return redirect(url_for('show_playground', playground_id=playground_id))
 
 

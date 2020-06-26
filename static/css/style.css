@@ -204,7 +204,6 @@ transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
-
 /* DELETE BUTTON */
 .btn-delete {
   border: none;
@@ -384,7 +383,7 @@ transform: translateX(-9%) translateY(-25%) rotate(45deg);
 .playground-single {
   position: inherit;
   width: auto;
-  margin-bottom:20px;
+  margin:50px 0px 50px 0px;
   /* padding-bottom:100px; */
   /*border-bottom:1px solid #e4e4e4;*/
   /* padding-bottom:20px; */
