@@ -55,7 +55,7 @@ def edit_playground(playground_id):
     all_boroughs =  mongo.db.boroughs.find()
     return render_template('editplayground.html', playground=the_playground,
                            boroughs=all_boroughs)
-
+                           
 
 #Database updates with edited info 
 @app.route('/update_playground/<playground_id>', methods=["POST"])
@@ -68,10 +68,10 @@ def update_playground(playground_id):
         'playground_name': request.form.get('playground_name'),
         'borough_name': request.form.get('borough_name'),
         'playground_description': request.form.get('playground_description'),
-        'image_urls': request.form.get('image_url'),
-        'image_urls': request.form.get('img1_url'),
-        'image_urls': request.form.get('img2_url'),
-        'image_urls': request.form.get('img3_url')
+        'image_url': request.form.get('image_url'),
+        'img1_url': request.form.get('img1_url'),
+        'img2_url': request.form.get('img2_url'),
+        'img3_url': request.form.get('img3_url')
     })
     return redirect(url_for('show_playground', playground_id=playground_id))
 
