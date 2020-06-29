@@ -7,8 +7,9 @@ $(document).ready(function(){
     });
 });
 
-/*========================== CARD HOVER =================================*/
+/*========================== GRID CARD HOVER =================================*/
 
+// To make image details slide up and cover part of card
 $('.card').hover(
     function(){
         $(this).find('.bottom').stop().slideDown();

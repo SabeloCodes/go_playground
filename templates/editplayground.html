@@ -40,8 +40,8 @@
             <div class="col-lg-12">
                 <div class="row">
                     <div class="form-group col-lg-12">
-                        <label for="playground_descreption" class="form-label">Review</label>
-                        <textarea class="form-control" name="playground_descreption" id="playground_descreption" rows="3"> {{ playground.playground_description }}</textarea>
+                        <label for="playground_description" class="form-label">Review</label>
+                        <textarea class="form-control" name="playground_description" id="playground_description" rows="3"> {{ playground.playground_description }}</textarea>
                     </div>
                 </div>
 
@@ -49,9 +49,9 @@
                     <div class="row">
                         <label for="image_url" class="form-label">Images</label>
                         <input type="text" class="form-control" id="image_url" name="image-url" aria-describedby="" placeholder="Enter Main Image URL" value="{{ playground.image_url }}">
-                        <input type="text" class="form-control" id="image_url" name="image_url" aria-describedby="" placeholder="Enter Supporting Image URL" value="{{ playground.img1_url }}">
-                        <input type="text" class="form-control" id="image_url" name="image_url" aria-describedby="" placeholder="Enter Supporting Image URL" value="{{ playground.img2_url }}">
-                        <input type="text" class="form-control" id="image_url" name="image_url" aria-describedby="" placeholder="Enter Supporting Image URL" value="{{ playground.img3_url }}">
+                        <input type="text" class="form-control" id="image_url" name="img1_url" aria-describedby="" placeholder="Enter Supporting Image URL" value="{{ playground.img1_url }}">
+                        <input type="text" class="form-control" id="image_url" name="img2_url" aria-describedby="" placeholder="Enter Supporting Image URL" value="{{ playground.img2_url }}">
+                        <input type="text" class="form-control" id="image_url" name="img3_url" aria-describedby="" placeholder="Enter Supporting Image URL" value="{{ playground.img3_url }}">
                     </div> 
                 </div>
             </div>

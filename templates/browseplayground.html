@@ -18,7 +18,7 @@
                         <h6 class="sub-title">{{ playground.borough_name }}</h6>
                     </div>
                     <div class="bottom">
-                        <p class=""> {{ playground.playground_description }}</p>
+                        <p id="blurb"> {{ playground.playground_description }}</p>
                     <button type="submit" class="btn-read">
                     <span class=""> 
                         <a href="{{url_for('show_playground', playground_id=playground._id)}}" title="details">
