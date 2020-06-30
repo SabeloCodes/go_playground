@@ -71,7 +71,9 @@ def update_playground(playground_id):
         'image_url': request.form.get('image_url'),
         'img1_url': request.form.get('img1_url'),
         'img2_url': request.form.get('img2_url'),
-        'img3_url': request.form.get('img3_url')
+        'img3_url': request.form.get('img3_url'),
+        'lat': request.form.get('lat'),
+        'lng': request.form.get('lng')
     })
     return redirect(url_for('show_playground', playground_id=playground_id))
 

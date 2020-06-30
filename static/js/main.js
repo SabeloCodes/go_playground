@@ -66,8 +66,6 @@ function initMap() {
 // Call geocode
 function geocode(){
 
-    console.log("testing");
-
     var location = document.getElementById('location-name').value;
     axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
         params:{

@@ -4,7 +4,7 @@
     <div href="{{ url_for('show_playground', playground_id=playground._id) }}" class="row">
 
     
-        <div class="playground-single col-lg-12">
+        <div class="playground-single-1 col-lg-12">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="playground-map" id="map">
@@ -29,7 +29,7 @@
             </div>
         </div>
                     
-        <div class="playground-single col-lg-12">
+        <div class="playground-single-2 col-lg-12">
             <div class="row">
                 <div class="user-playground-images">
                     <h7>Photos</h7>
@@ -45,8 +45,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="col-lg-12">
+                <div class="playground-single-3 col-lg-12">
                     <div class="row">
                         <div class="col-md-6">
                             <a href="{{url_for('edit_playground', playground_id=playground._id)}}" class="btn-edit" role="button" aria-pressed="true">
@@ -60,8 +62,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </div>
 </div>
 
