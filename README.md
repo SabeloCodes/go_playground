@@ -1,4 +1,4 @@
-#Go Playground - Milestone Project 3
+# Go Playground - Milestone Project 3
 
 This is a web application primarily targeted for people with young families. The website provides a simple easy-to-use 
 method for locating and creating a playground location nearest to you. 
