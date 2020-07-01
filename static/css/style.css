@@ -412,7 +412,7 @@ transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
 .playground-single-2 .user-playground-images .image {
-  margin-bottom:15px;
+  margin-bottom:5px;
   box-shadow:0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -433,7 +433,6 @@ transform: translateX(-9%) translateY(-25%) rotate(45deg);
     background: #ffffff;
     border-radius: 25px;
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
-	/* box-sizing: border-box; */
     transition: 0.4s linear;
 }
 
