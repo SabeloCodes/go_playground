@@ -8,7 +8,11 @@ UX
 
 Mockups
 
-<img src="/static/images/carousel/climbing-frame.jpg">
+<img src="/static/images/wirwframes/AddPlayground.png">
+<img src="/static/images/wirwframes/BrowsePlayground.png">
+<img src="/static/images/wirwframes/EditPlayground.png">
+<img src="/static/images/wirwframes/Home.png">
+<img src="/static/images/wirwframes/ShowPlayground.png">
 
 
 Existing Features
