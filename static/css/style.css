@@ -372,6 +372,7 @@ transform: translateX(-9%) translateY(-25%) rotate(45deg);
  /* Set the size of the div element that contains the map */
  .playground-map {
     height: 100%;  
+    min-height: 250px;
     width: 100%;  
     background-color: grey;
 }

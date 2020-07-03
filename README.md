@@ -8,6 +8,8 @@ UX
 
 Mockups
 
+<img src="/static/images/carousel/climbing-frame.jpg">
+
 
 Existing Features
 
