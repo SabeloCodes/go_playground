@@ -1,15 +1,32 @@
 # Go Playground - Milestone Project 3
 
-This is a web application primarily targeted for people with young families. The website provides a simple easy-to-use 
-method for locating and creating a playground location nearest to you. 
+This is a web application primarily targeted to people with young families, or anyone looking after children. 
+The website provides a simple easy-to-use method for locating and and finding out in depth information
+about a childrens playground or park, before going there. All the content will be created by other users, 
+this will widen the ddatabase and ensure that a wide range of playgrounds are covered. 
 
-UX
+# UX
+As a parent of young children under the age of 12 years old, I am constantly looking for ways 
+to entertain them. Playing in the garden can quickly become boring and unadventurous for both the 
+the parent and the child. So going out to local parks and playgrounds is an essential part of 
+parenting when you live in the city or an urban location. 
 
+One of the most frustrating occurances when going to a new playground that you have not visited 
+before, is not knowing what to expect when you get there. When travelling with two or three children 
+of varying ages, one would need to know if they are working toilets, if there is a cafe where they 
+can buy food if need be. Even to know when the playground was last rennovated and if the equipment is 
+operating properly. All of these questions go through a parent's mind as they are leaving the house 
+to go to a playground they have never been before. 
 
-Mockups
+The availability of all this information would be hugely beneficial to parents, and so will make that 
+trip to a new playground more interesting for the children because mum and dad will know what to expect 
+when they get to their destination. Also, this web application can act as a resourse for ensuring that 
+different local authorities held accountable for making sure that play spaces are mentained properly 
+and kept in good working order. If everything is kept to a decent standard then the reviews will 
+be positive from parents and children.  
 
-![Index page](/static/images/wireframes/AddPlayground.png)
-<!-- <img src="/static/images/wireframes/AddPlayground.png"> -->
+## Mockups
+<img src="/static/images/wireframes/AddPlayground.png" width="200px">
 <img src="/static/images/wireframes/BrowsePlayground.png">
 <img src="/static/images/wireframes/EditPlayground.png">
 <img src="/static/images/wireframes/Home.png">
