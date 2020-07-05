@@ -8,7 +8,8 @@ UX
 
 Mockups
 
-<img src="/static/images/wireframes/AddPlayground.png">
+![Index page](/static/images/wireframes/AddPlayground.png)
+<!-- <img src="/static/images/wireframes/AddPlayground.png"> -->
 <img src="/static/images/wireframes/BrowsePlayground.png">
 <img src="/static/images/wireframes/EditPlayground.png">
 <img src="/static/images/wireframes/Home.png">
