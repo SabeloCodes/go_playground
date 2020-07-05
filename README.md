@@ -8,11 +8,11 @@ UX
 
 Mockups
 
-<img src="/static/images/wirwframes/AddPlayground.png">
-<img src="/static/images/wirwframes/BrowsePlayground.png">
-<img src="/static/images/wirwframes/EditPlayground.png">
-<img src="/static/images/wirwframes/Home.png">
-<img src="/static/images/wirwframes/ShowPlayground.png">
+<img src="/static/images/wireframes/AddPlayground.png">
+<img src="/static/images/wireframes/BrowsePlayground.png">
+<img src="/static/images/wireframes/EditPlayground.png">
+<img src="/static/images/wireframes/Home.png">
+<img src="/static/images/wireframes/ShowPlayground.png">
 
 
 Existing Features
