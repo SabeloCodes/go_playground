@@ -24,9 +24,6 @@ different local authorities held accountable for making sure that play spaces ar
 and kept in good working order. If everything is kept to a decent standard then the reviews will be 
 positive from parents and children. 
 
--- 
-Sabelo 
-
 ## Mockups
 <img src="/static/images/wireframes/AddPlayground.png" width="900px">
 <img src="/static/images/wireframes/BrowsePlayground.png" width="900px">
