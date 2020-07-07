@@ -1,68 +1,76 @@
 # Go Playground - Milestone Project 3
-
-This is a web application primarily targeted to people with young families, or anyone looking after children. 
-The website provides a simple easy-to-use method for locating and and finding out in depth information
-about a childrens playground or park, before going there. All the content will be created by other users, 
-this will widen the ddatabase and ensure that a wide range of playgrounds are covered. 
+This is a web application primarily targeted to people with young families, or anyone looking 
+after children. The website provides a simple easy-to-use method for locating and finding out in-depth 
+informationabout a children's playground or park, before going there. All the content will be created 
+by other users, this will widen the database and ensure that a wide range of playgrounds is covered. 
 
 # UX
-As a parent of young children under the age of 12 years old, I am constantly looking for ways 
-to entertain them. Playing in the garden can quickly become boring and unadventurous for both the 
-the parent and the child. So going out to local parks and playgrounds is an essential part of 
-parenting when you live in the city or an urban location. 
+As a parent of young children under the age of 12 years old, I am constantly looking for ways to 
+entertain them. Playing in the garden can quickly become boring and unadventurous for both the parent 
+and the child. So going out to local parks and playgrounds is an essential part of parenting when you 
+live in the city or an urban location. 
 
-One of the most frustrating occurances when going to a new playground that you have not visited 
-before, is not knowing what to expect when you get there. When travelling with two or three children 
-of varying ages, one would need to know if they are working toilets, if there is a cafe where they 
-can buy food if need be. Even to know when the playground was last rennovated and if the equipment is 
-operating properly. All of these questions go through a parent's mind as they are leaving the house 
-to go to a playground they have never been before. 
+One of the most frustrating occurrences when going to a new playground that you have not visited before 
+is not knowing what to expect when you get there. When travelling with two or three children of varying 
+ages, one would need to know if they are working toilets, if there is a cafe where they can buy food if 
+need be. Even to know when the playground was last renovated and if the equipment is operating properly. 
+All of these questions go through a parent's mind as they are leaving the house to go to a playground 
+they have never been before. 
 
 The availability of all this information would be hugely beneficial to parents, and so will make that 
 trip to a new playground more interesting for the children because mum and dad will know what to expect 
-when they get to their destination. Also, this web application can act as a resourse for ensuring that 
-different local authorities held accountable for making sure that play spaces are mentained properly 
-and kept in good working order. If everything is kept to a decent standard then the reviews will 
-be positive from parents and children.  
+when they get to their destination. Also, this web application can act as a resource for ensuring that 
+different local authorities held accountable for making sure that play spaces are maintained properly 
+and kept in good working order. If everything is kept to a decent standard then the reviews will be 
+positive from parents and children. 
+
+-- 
+Sabelo 
 
 ## Mockups
-<img src="/static/images/wireframes/AddPlayground.png" width="200px">
-<img src="/static/images/wireframes/BrowsePlayground.png">
-<img src="/static/images/wireframes/EditPlayground.png">
-<img src="/static/images/wireframes/Home.png">
-<img src="/static/images/wireframes/ShowPlayground.png">
+<img src="/static/images/wireframes/AddPlayground.png" width="900px">
+<img src="/static/images/wireframes/BrowsePlayground.png" width="900px">
+<img src="/static/images/wireframes/EditPlayground.png" width="900px">
+<img src="/static/images/wireframes/Home.png" width="900px">
+<img src="/static/images/wireframes/ShowPlayground.png" width="900px">
 
+# Features
+### Existing Features
+1. Index Page
+    1. This is the home page of the site where users are greeted by a carousel displaying various
+       playground images and relevant news related to children's play-spaces. Also, the user can select
+       *from a dropdown menu* a particular borough in order to display only the playgrounds from 
+       that area. 
+    
+2. Playgrounds
+    2. Users can view the entirety of the playgrounds database, but only in a minimised format. From there
+       a user can then choose a playground profile they want to examine in detail.
 
-Existing Features
+3. Add Playground
+    3. Form for adding a new playground.
 
-playground.html
+4. Show Playgrounds
+    4. Displays in detail all the features of an individual playground. Includes a map, review, pictures 
+       and two options for editing and deleting a playground entry.
 
+5. Edit Playground
+    5. This is a feature found within *Show Playground* and gives the user the ability to amend any 
+       information they might have mistakenly entered incorrectely.
 
-* Company logo
-  Playful and simple in colours and font. Positioned on the top left of the banner where it greets the 
-  website visitor.
+6. Delete Playground
+    6. Also found in *Show Playground* and gives the ability to delete the entire entry.
 
+7. Footer
+    7. The bottom of each page has a footer with links to the social media networks for interested 
+       users to find more up-to-date information.
 
-* Footer
-  The bottom of the site has an uncomplicated footer with links to the company's social media networks for interested users
-
-
-addplayground.html
-
-
-showplayground.html
-  
-
-editplyground.html
-
-
-browseallplaygrouns.html
-
-
-Features to be implemented
+## Features Left to Implement
+The homepage caurosel will display a variety of featured articles, video links and other material
+related to parks and playgrounds in London. 
 
 
 Technologies Used
+This application was developed partly in Cloud9 and partly using GitPod. A live version of the site can be found here. Version control was done using git.
 * HTML
   Used for the markup
 
