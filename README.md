@@ -70,35 +70,45 @@ This application was developed initially using an [AWS](https://aws.amazon.com/)
 [Cloud9](https://aws.amazon.com/cloud9/), and then moved to the [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/whatsnew/) 
 based [GitPod](https://www.gitpod.io/) where it was completed. 
 
-<p>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-        <img style="border:0;width:88px;height:31px"
-            src="https://vignette.wikia.nocookie.net/logopedia/images/0/02/HTML5_logo.svg/revision/latest/scale-to-width-down/150?cb=20110118165238"
-            alt="HTML 5 LOGO">
-    </a>
-</p>
+* __[HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)__
+    Using the latest specification markup language to fill the the web application templates with 
+    useful and meaningful content.
 
-* Using the latest specification markup language to fill the the web application templates with 
-useful and meaningful content.
+* __[CSS 3](https://developer.mozilla.org/en-US/docs/Web/CSS)__
+    The language that describes how HTML elements should be displayed on a web application.
 
-* CSS 3
+* __[JQuery](https://jqueryui.com/)__
+    Easy to use JS library for manipulating DOM elements.    
 
+* __[JavaScript](https://developer.mozilla.org/en-US/docs/Web/Javascript)__
+    Running with the HTML strucrure of the website, JS performs dynamic functions to update, 
+    change and manipulate DOM.
 
+* __[Bootstrap](https://getbootstrap.com/)__
+     Applied this collection of reusable pieces of HTML, CSS, and JavaScript code framework in 
+     order to create a fully responsive web application. 
+
+* __[Flask](https://flask.palletsprojects.com/en/1.1.x/)__
+    In order to run Python server-side code, I used a Python web lightweight framework called Flask.
+
+* __[Python](https://developer.mozilla.org/en-US/docs/Glossary/Python)__
+    Used this flexible programming language for my application development.
+
+* __[MongoDB](https://www.mongodb.com/)__
+    For data schemas I used this document-oriented database program.
+
+* __[Google API's](https://developers.google.com/docs/api/)__
+    In order to gain programmatic access to Google Maps and Geocode mapping, I used Google API Services.
+
+* __[Google API's](https://developers.google.com/docs/api/)__
+    In order to gain programmatic access to Google Maps and Geocode mapping, I used Google API Services.
+
+* __[Font Awesome](https://fontawesome.com/icons/)__
+    All the fonts used on the application is from Font Awesome.
 
 A live version of the site can be found [here](https://go-playground.herokuapp.com/find_playground). 
 Version control was done using git.
 
-
-* HTML
-  Used for the markup
-
-* CSS
-  Variant_office/styles.css
-  This was used to style the elements of the HTML code
-
-* Bootstrap
-  https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
-  Used to assist with styling the website and to build the grid
 
 * Font Awesome
   https://use.fontawesome.com/releases/v5.3.1/css/all.css
