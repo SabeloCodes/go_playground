@@ -33,41 +33,62 @@ positive from parents and children.
 
 # Features
 ### Existing Features
-1. Index Page
-    1. This is the home page of the site where users are greeted by a carousel displaying various
+* Index Page
+    * This is the home page of the site where users are greeted by a carousel displaying various
        playground images and relevant news related to children's play-spaces. Also, the user can select
        *from a dropdown menu* a particular borough in order to display only the playgrounds from 
        that area. 
     
-2. Playgrounds
-    2. Users can view the entirety of the playgrounds database, but only in a minimised format. From there
+* Playgrounds
+    * Users can view the entirety of the playgrounds database, but only in a minimised format. From there
        a user can then choose a playground profile they want to examine in detail.
 
-3. Add Playground
-    3. Form for adding a new playground.
+* Add Playground
+    * Form for adding a new playground.
 
-4. Show Playgrounds
-    4. Displays in detail all the features of an individual playground. Includes a map, review, pictures 
+* Show Playgrounds
+    * Displays in detail all the features of an individual playground. Includes a map, review, pictures 
        and two options for editing and deleting a playground entry.
 
-5. Edit Playground
-    5. This is a feature found within *Show Playground* and gives the user the ability to amend any 
+* Edit Playground
+    * This is a feature found within *Show Playground* and gives the user the ability to amend any 
        information they might have mistakenly entered incorrectely.
 
-6. Delete Playground
-    6. Also found in *Show Playground* and gives the ability to delete the entire entry.
+* Delete Playground
+    * Also found in *Show Playground* and gives the ability to delete the entire entry.
 
-7. Footer
-    7. The bottom of each page has a footer with links to the social media networks for interested 
+* Footer
+    * The bottom of each page has a footer with links to the social media networks for interested 
        users to find more up-to-date information.
 
 ## Features Left to Implement
 The homepage caurosel will display a variety of featured articles, video links and other material
 related to parks and playgrounds in London. 
 
+# Technologies Used
+This application was developed initially using an [AWS](https://aws.amazon.com/) IDE called 
+[Cloud9](https://aws.amazon.com/cloud9/), and then moved to the [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/whatsnew/) 
+based [GitPod](https://www.gitpod.io/) where it was completed. 
 
-Technologies Used
-This application was developed partly in Cloud9 and partly using GitPod. A live version of the site can be found here. Version control was done using git.
+<p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+        <img style="border:0;width:88px;height:31px"
+            src="https://vignette.wikia.nocookie.net/logopedia/images/0/02/HTML5_logo.svg/revision/latest/scale-to-width-down/150?cb=20110118165238"
+            alt="HTML 5 LOGO">
+    </a>
+</p>
+
+* Using the latest specification markup language to fill the the web application templates with 
+useful and meaningful content.
+
+* CSS 3
+
+
+
+A live version of the site can be found [here](https://go-playground.herokuapp.com/find_playground). 
+Version control was done using git.
+
+
 * HTML
   Used for the markup
 
