@@ -110,18 +110,6 @@ A live version of the site can be found [here](https://go-playground.herokuapp.c
 Version control was done using git.
 
 
-* Font Awesome
-  https://use.fontawesome.com/releases/v5.3.1/css/all.css
-  Used to create uniform fonts for the website social media footer
-
-* Validators
-  Used an HTML [validator](https://validator.w3.org/) to check the code for syntax errors
-  CSS [checker](http://csslint.net/) used to check the styling
-
-* Formatter
-  An HTML[formatter](https://htmlformatter.com/) was used
-
-
 Testing:
 
 1. Spelling, Grammar, Punctuation
