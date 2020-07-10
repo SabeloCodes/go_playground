@@ -106,11 +106,24 @@ based [GitPod](https://www.gitpod.io/) where it was completed.
 * __[Font Awesome](https://fontawesome.com/icons/)__
     All the fonts used on the application is from Font Awesome.
 
+# Deployment
+
 A live version of the site can be found [here](https://go-playground.herokuapp.com/find_playground). 
-Version control was done using git.
+Used [Git](https://github.com/) for version control. For deploying my project to a hosting platform, 
+I used Heroku. After creating an account with Heroku, I then created an app/dyno using a unique name 
+that has not already been used by someone else. With evey code amendment, I would add and then commit those 
+changes to my GitHub repository. In turn, I would push my amended code to Git and also to Heruku. 
+
+If I add or update an existing library for a specific functionality, I would then use the command: 
+pip3 freeze > requirements.txt which updates the requirements.txt file with all changes made. This is 
+so Heroku knows which modules to use when running the application. On Heroku settings, I set the IP and PORT 
+variables to link my app with Heroku.
+
+My code can also be run locally using the GitPod IDE. On the _gitpod /workspace/go_playground terminal, I type 
+the command: python3 app.py in order to run my app locally.
 
 
-Testing:
+# Testing:
 
 1. Spelling, Grammar, Punctuation
    Checked for typos, grammar, and proper punctuation throughout all site pages. 
