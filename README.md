@@ -125,72 +125,43 @@ the command: python3 app.py in order to run my app locally.
 
 # Testing:
 
-1. Spelling, Grammar, Punctuation
-   Checked for typos, grammar, and proper punctuation throughout all site pages. 
+* Developed, tested and debugged the app on [Google Chrome](https://www.google.co.uk/intl/en_uk/chrome/) browser. 
+  Kept responsiveness tests regular, on creating a new functionality I would ensure app works well on different 
+  devices by changing viewport on Dev Tools.
 
-2. Fonts
-   Went through the copy checking to see that the formatting is consistent, checked for odd blips in the copy.
+* Spelling, Grammar, Punctuation
+  Checked for typos, grammar, and proper punctuation throughout all site pages. 
 
-3. Live URLs
-   All links to external websites, other webpages within the site and links to images have been checked and verified that 
-   they work properly. Clicked on every link to make sure it is going to the correct page, also made sure that links that are 
-   meant to open in another page have the target="_blank"
+* Fonts
+  Went through the copy checking to see that the formatting is consistent, checked for odd blips in the copy.
 
+* Title Tags
+   Every page has a unique and HTML corresponding title tag. 
 
-4. Title Tags/Meta Data
-   Made sure that every page has a unique and HTML corresponding title tag. 
+* Social Media Integration
+   All social media icons on the site go to the correct pages. Social Media buttons are easily identifiable and 
+   located on the footer of every page.
 
-5. Compatibility
-   Tested the website on Google Chrome, Firefox Mozilla and Safari for compatibility.
+* Site Loading Speed 
+   Using Google [Test My Site](https://www.thinkwithgoogle.com/intl/en-gb/feature/testmysite/) I was able to 
+   test the loading speed on mobile 4G devices and it is average, within 2 seconds. 
 
-6. Images
-   The images do not display text renders when hovered over, but all the alt attributes are there. Every image displays 
-   correctly. All images posted are formatted as jpg with only one exception for the ARB link image which is a PNG. 
-   All photographs are stored as JPG, and the ARB logo is a simple image/icon and stored as a PNG.
+* Used [Code Beautify ](https://codebeautify.org/) to validate and format my code. 
 
-   The photographs on the projects.html page load slightly slower depending on the browser used. I think it is because of the 
-   size but I haven’t worked out how to solve that issue.
+* Bugs/Problems Encountered
+  When I was still using AWS Cloud9, sometimes the IDE would run a line of code even though that bit of
+  syntax was commented out. That was only happening on the app.py file.
 
-7. Social Media Integration
-   All social media icons on the site go to the correct pages. Social Media buttons are easily identifiable and located on 
-   the footer of every page.
+# Credits
 
-8. Site Loading Speed & Responsive
-   Using Google Test My Site I was able to test the loading speed on mobile 3G devices and it is good - within 2 seconds. 
-   I also tested the responsiveness of my site with the toggle device bar on the Google inspect page.
-
-
-9. Tested my CSS with CSS [Lint validator](http://csslint.net/) for any syntax errors or unnecessary code DRY. 
-   Did the same for the HTML, using [HTML](https://htmlformatter.com/) checker. Using Google Chrome Developer Tools I was 
-   able to look and play around with different aspects of my code, like the grid spacing. In doing so I eventually can 
-   settle on a design feature. I also used the tools to make sure my Mobile first approach worked, ie. testing on different 
-   devices.
-
-
-Deployment
-Having started working on the website skeleton locally on my computer, using Atom code editor. I then created a repository on 
-GitHub, this is where I have deployed my code. Once all my code is on the GitHub repository, I went on editing the project. 
-Every time I make a change, I follow up by staging the changes and then committing them.
-
-Social-Links & Nav-Titles:
-Used the same CSS hover styling for both in order to have a recognizable theme.
-
-Bugs/Problems Encountered
-My footer kept on twitching to the right every time I clicked on one of the grid items. Solved by making the img logo position: 
-relative.
-
-Had an issue where the video would continue playing the sound even after its been closed. Wrote a JavaScript function to make 
-sure the video (including sound) completely stops when video is closed.  
-
-Credits
-Content
+### Content
 T
 
-Media:
+### Media:
 Some photos were obtained from www.unsplash.com but most have been web links from different sources
 online.
 
-Acknowledgements
+### Acknowledgements
 
 
 

@@ -1,8 +1,8 @@
 /*/////////////////////////// FONT CSS //////////////////// */
 
 @font-face {
-  src: url(/static/fonts/OrangeMilk-L3AqD.otf);
   font-family: 'orange-milk';
+  src: url(/static/fonts/OrangeMilk-L3AqD.otf);
 }
 
 body {
