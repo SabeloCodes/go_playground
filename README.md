@@ -146,7 +146,7 @@ the command: python3 app.py in order to run my app locally.
    Using Google [Test My Site](https://www.thinkwithgoogle.com/intl/en-gb/feature/testmysite/) I was able to 
    test the loading speed on mobile 4G devices and it is average, within 2 seconds. 
 
-* Used [Code Beautify ](https://codebeautify.org/) to validate and format my code. 
+* Used [Code Beautify](https://codebeautify.org/) to validate and format my code. 
 
 * Bugs/Problems Encountered
   When I was still using AWS Cloud9, sometimes the IDE would run a line of code even though that bit of
@@ -155,14 +155,11 @@ the command: python3 app.py in order to run my app locally.
 # Credits
 
 ### Content
-T
+Most of the text used is taken from the respective London Borough Council description of a playground or park.
 
-### Media:
+### Media
 Some photos were obtained from www.unsplash.com but most have been web links from different sources
 online.
 
 ### Acknowledgements
-
-
-
-
+Many thanks to the CI tutors who were very patient with me asking silly questions.

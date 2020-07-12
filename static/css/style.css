@@ -67,7 +67,6 @@ h7 {
   margin-bottom: 25px;
 }
 
-
 /*/////////////////////////// BUTTONS //////////////////// */
 
 /* SUBMIT BUTTON */
@@ -116,9 +115,11 @@ h7 {
 
 /* READ BUTTON */
 .btn-read {
+  background-color: #ffffff;
   border: none;
   border-radius: 5px;
   display: block;
+  text-decoration: none;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
@@ -128,7 +129,6 @@ h7 {
   color: #2f323a;
   font-weight: 600;
   font-size: 16px;
-  background-color: #ffffff;
   padding: 10px 60px;
   margin: 20px auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0.40);
