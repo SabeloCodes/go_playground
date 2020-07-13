@@ -113,55 +113,7 @@ h7 {
 }
 
 
-/* READ BUTTON */
-.btn-read {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  outline: none;
-  overflow: hidden;
-  width: 300px;
-  position: relative;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 10px 30px;
-  margin: 20px auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.40);
-}
-
-.btn-read a {
-  color: #2f323a;
-}
-
-.btn-read span {
-  position: relative; 
-  z-index: 1;
-}
-
-.btn-read:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 590%;
-  width: 140%;
-  background: #529106;
-  transition: all .5s ease-in-out;
-  transform: translateX(-98%) translateY(-40%) rotate(45deg);
-}
-
-.btn-read:hover:after {
-  text-decoration : none;
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
-
-
-/* EDIT AND DELETE BUTTON */
+/* READ EDIT AND DELETE BUTTONS */
 .btn-standard {
   border: none;
   border-radius: 5px;
@@ -207,7 +159,11 @@ h7 {
 
 .btn-delete:after {
   background: #E01022;
- 
+}
+
+.btn-read:after {
+  background: #529106;
+
 }
 
 .btn-standard:hover:after {

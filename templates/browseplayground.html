@@ -19,12 +19,12 @@
                     </div>
                     <div class="bottom">
                         <p id="blurb"> {{ playground.playground_description }}</p>
-                        <div role="button" class="btn btn-read">
-                            <span> 
+                        <div role="button" class="btn btn-standard btn-read">
+                            
                                 <a href="{{url_for('show_playground', playground_id=playground._id)}}" title="details">
-                                DETAILS... <i class="fab fa-readme"></i>
+                                <span> DETAILS... <i class="fab fa-readme"></i></span>
                                 </a>
-                            </span>
+                            
                         </div>
                     </div>
                 </div>
