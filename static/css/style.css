@@ -79,6 +79,7 @@ h7 {
   text-transform: uppercase;
   outline: none;
   overflow: hidden;
+  width: 300px;
   position: relative;
   color: #2f323a;
   font-weight: 600;
@@ -93,7 +94,6 @@ h7 {
   position: relative; 
   z-index: 1;
 }
-
 
 .btn-submit:after {
   content: "";
@@ -125,13 +125,17 @@ h7 {
   text-transform: uppercase;
   outline: none;
   overflow: hidden;
+  width: 300px;
   position: relative;
-  color: #2f323a;
   font-weight: 600;
   font-size: 16px;
-  padding: 10px 60px;
+  padding: 10px 30px;
   margin: 20px auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0.40);
+}
+
+.btn-read a {
+  color: #2f323a;
 }
 
 .btn-read span {
@@ -146,9 +150,9 @@ h7 {
   top: 0;
   height: 590%;
   width: 140%;
-  background: #4874bf;
+  background: #529106;
   transition: all .5s ease-in-out;
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-40%) rotate(45deg);
 }
 
 .btn-read:hover:after {
@@ -157,12 +161,12 @@ h7 {
 }
 
 
-/* EDIT BUTTON */
-.btn-edit {
+/* EDIT AND DELETE BUTTON */
+.btn-standard {
   border: none;
   border-radius: 5px;
   display: block;
-  width: 400px;
+  width: 300px;
   text-align: center;
   text-decoration: none; 
   cursor: pointer;
@@ -179,70 +183,37 @@ h7 {
   box-shadow: 0 5px 15px rgba(0,0,0,0.40);
 }
 
-.btn-edit span {
+.btn-standard span {
+  color: #2f323a;
   position: relative; 
   z-index: 1;
+}
+
+.btn-standard:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 590%;
+  width: 140%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  transform: translateX(-98%) translateY(-55%) rotate(45deg);
 }
 
 .btn-edit:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 1100%;
-  width: 120%;
-  background: #0e367c;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
-}
-
-.btn-edit:hover:after {
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
-
-/* DELETE BUTTON */
-.btn-delete {
-  border: none;
-  border-radius: 5px;
-  display: block;
-  width: 400px;
-  text-align: center;
-  text-decoration: none; 
-  cursor: pointer;
-  text-transform: uppercase;
-  outline: none;
-  overflow: hidden;
-  position: relative;
-  color: #2f323a;
-  font-weight: 600;
-  font-size: 16px;
-  background-color: #ffffff;
-  padding: 10px 60px;
-  margin: 20px auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.40);
-}
-
-.btn-delete span {
-  position: relative; 
-  z-index: 1;
+  background: #2C559D;
 }
 
 .btn-delete:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 1100%;
-  width: 120%;
-  background: #f44242;
-  transition: all .5s ease-in-out;
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  background: #E01022;
+ 
 }
 
-.btn-delete:hover:after {
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+.btn-standard:hover:after {
+  transform: translateX(-9%) translateY(-35%) rotate(45deg);
 }
+
 
 /*/////////////////////////// NAV BAR ///////////////////////*/
 
@@ -271,7 +242,7 @@ h7 {
  }
 
  .nav-item:hover::after {
-     width: 100%
+    width: 100%
  }
 
  .navbar-light .navbar-nav .active>.nav-link,
@@ -280,7 +251,7 @@ h7 {
  .navbar-light .navbar-nav .show>.nav-link,
  .navbar-light .navbar-nav .nav-link:focus,
  .navbar-light .navbar-nav .nav-link:hover {
-     color: #f44242
+    color: #f44242
  }
 
 .nav-link {
@@ -308,7 +279,6 @@ h7 {
 .carousel {
   padding-top: 10px;
 }
-
 
 /*/////////////////////////// SEARCH BOX CSS //////////////////// */
 
