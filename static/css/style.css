@@ -34,7 +34,7 @@ h2 {
   text-transform: uppercase; 
   font-weight: 800;
   font-size: 2.5em;
-  color: #5d7a8a;
+  color: #2f323a;
 }
 
 h3 {
@@ -54,7 +54,7 @@ h6 {
   text-align: left;
   font-size: 1.5em;
   font-weight: 400;
-  color: #5d7a8a;
+  color: #2f323a;
 }
 
 h7 {
@@ -104,12 +104,12 @@ h7 {
   width: 140%;
   background: #4874bf;
   transition: all .5s ease-in-out;
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-55%) rotate(45deg);
 }
 
 .btn-submit:hover:after {
   text-decoration : none;
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-35%) rotate(45deg);
 }
 
 
@@ -158,7 +158,7 @@ h7 {
 }
 
 .btn-delete:after {
-  background: #E01022;
+  background: #f44242;
 }
 
 .btn-read:after {
@@ -184,8 +184,12 @@ h7 {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-  color: rgba(0,0,0,.4);
+  /* color: #2f323a; */
   margin: 0.5em auto;
+}
+
+.nav-item .nav-link {
+    color: #43464D;
 }
 
 .nav-item::after {
@@ -268,7 +272,7 @@ h7 {
 
 .form-control {
   border-radius: 0;
-  border-color: #aaaaaa;
+  border-color: #CCCCCC;
   border-width: 0 0 2px 0;
   border-style: none none solid none;
   box-shadow: none;
@@ -276,13 +280,13 @@ h7 {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #5d7a8a;
+  border-color: #43464D;
 }
 
 /*Styling for form inputs*/
 .form-label {
   font-size: 1em;
-  color: #5d7a8a;
+  color: #CCCCCC;
   margin: 0;
   display: block;
   opacity: 1;
@@ -295,11 +299,11 @@ h7 {
   height: 100%;  
   min-height: 250px;
   width: 100%;  
-  background-color: grey;
+  background-color: #43464D;
 }
 
 .playground-single-1 .playground-info .icon {
-  color:#ffb526;
+  color:#FFA500;
 }
 
 .playground-single-1 {
@@ -407,11 +411,11 @@ h7 {
 .site-footer
 {
   border-radius: 6px;
-  background-color:#26272b;
+  background-color:#403E3D;
   padding:5px;
   font-size:1em;
   line-height:24px;
-  color:#737373;
+  color:#43464D;
   margin-bottom: 20px
 }
 
@@ -422,7 +426,7 @@ h7 {
 
 .site-footer a:hover
 {
-  color:#3366cc;
+  color:#4874bf;
   text-decoration:none;
 }
 
@@ -450,11 +454,12 @@ h7 {
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color: #737373;
 }
 
 .copyright-text
 {
+  color: #CCCCCC;
   margin:0;
   padding: 10px;
 }
@@ -493,8 +498,7 @@ h7 {
 }
 
 .social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
+  color:#FFFFFF;
   display:inline-block;
   line-height:44px;
   width:44px;
@@ -525,5 +529,5 @@ h7 {
 }
 .social-icons .github:hover
 {
-  background-color:#333
+  background-color:#33353D;
 }
