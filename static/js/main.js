@@ -88,7 +88,7 @@ function geocode(){
         document.getElementById('lng').value = lng;
 
         // Submit form
-        document.getElementById("location-form").submit()
+        document.getElementById("location-form").submit();
     })
     .catch(function(error){
         console.log(error);
