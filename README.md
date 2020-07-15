@@ -132,6 +132,8 @@ the command: python3 app.py in order to run my app locally.
   Kept responsiveness tests regular, on creating a new functionality I would ensure app works well on different 
   devices by changing viewport on Dev Tools.
 
+* Used [JS Hint](https://jshint.com/) for checking that my JavaScript code had no problems.
+
 * Spelling, Grammar, Punctuation
   Checked for typos, grammar, and proper punctuation throughout all site pages. 
 
