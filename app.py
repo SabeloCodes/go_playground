@@ -119,7 +119,7 @@ def browse_all_playgrounds():
 @app.route('/delete_playground/<playground_id>')
 def delete_playground(playground_id):
     mongo.db.playgrounds.remove({'_id': ObjectId(playground_id)})
-    return redirect(url_for('browse_playground'))
+    return redirect(url_for('browse_all_playgrounds'))
     
 
 if __name__ == '__main__':
