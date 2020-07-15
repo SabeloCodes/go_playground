@@ -69,51 +69,7 @@ h7 {
 
 /*/////////////////////////// BUTTONS //////////////////// */
 
-/* SUBMIT BUTTON */
-.btn-submit {
-  border: none;
-  border-radius: 5px;
-  display: block;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  outline: none;
-  overflow: hidden;
-  width: 300px;
-  position: relative;
-  color: #2f323a;
-  font-weight: 600;
-  font-size: 16px;
-  background-color: #ffffff;
-  padding: 10px 60px;
-  margin: 20px auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.40);
-}
-
-.btn-submit span {
-  position: relative; 
-  z-index: 1;
-}
-
-.btn-submit:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 590%;
-  width: 140%;
-  background: #4874bf;
-  transition: all .5s ease-in-out;
-  transform: translateX(-98%) translateY(-55%) rotate(45deg);
-}
-
-.btn-submit:hover:after {
-  text-decoration : none;
-  transform: translateX(-9%) translateY(-35%) rotate(45deg);
-}
-
-
-/* READ EDIT AND DELETE BUTTONS */
+/* SUBMIT, READ, EDIT AND DELETE BUTTONS */
 .btn-standard {
   border: none;
   border-radius: 5px;
@@ -151,6 +107,10 @@ h7 {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   transform: translateX(-98%) translateY(-55%) rotate(45deg);
+}
+
+.btn-submit:after {
+  background: #4874bf; 
 }
 
 .btn-edit:after {
