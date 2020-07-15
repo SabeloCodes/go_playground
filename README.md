@@ -89,7 +89,9 @@ based [GitPod](https://www.gitpod.io/) where it was completed.
      order to create a fully responsive web application. 
 
 * __[Flask](https://flask.palletsprojects.com/en/1.1.x/)__
-    In order to run Python server-side code, I used a Python web lightweight framework called Flask.
+    In order to run Python server-side code, I used a Python web lightweight framework called Flask. 
+    The framework is mainly used to easily and quickly connect database to our HTML based graphical 
+    user interfaces.
 
 * __[Python](https://developer.mozilla.org/en-US/docs/Glossary/Python)__
     Used this flexible programming language for my application development.
@@ -110,11 +112,12 @@ based [GitPod](https://www.gitpod.io/) where it was completed.
 
 A live version of the site can be found [here](https://go-playground.herokuapp.com/find_playground). 
 Used [Git](https://github.com/) for version control. For deploying my project to a hosting platform, 
-I used Heroku. After creating an account with Heroku, I then created an app/dyno using a unique name 
-that has not already been used by someone else. With evey code amendment, I would add and then commit those 
-changes to my GitHub repository. In turn, I would push my amended code to Git and also to Heruku. 
+I used Heroku. After creating an account with [Heroku](https://www.heroku.com/home), I then created an 
+app/dyno using a unique name that has not already been used by someone else. With evey code amendment, 
+I would add and then commit those changes to my GitHub repository. In turn, I would push my amended code 
+to Git and also to Heruku. 
 
-If I add or update an existing library for a specific functionality, I would then use the command: 
+If I add a new library or update an existing one for a specific functionality, I would then use the command: 
 pip3 freeze > requirements.txt which updates the requirements.txt file with all changes made. This is 
 so Heroku knows which modules to use when running the application. On Heroku settings, I set the IP and PORT 
 variables to link my app with Heroku.
@@ -150,7 +153,8 @@ the command: python3 app.py in order to run my app locally.
 
 * Bugs/Problems Encountered
   When I was still using AWS Cloud9, sometimes the IDE would run a line of code even though that bit of
-  syntax was commented out. That was only happening on the app.py file.
+  syntax was commented out. That was only happening on the app.py file. My mentor would look over my code, test 
+  and tell me if there was something I had to fix.
 
 # Credits
 
@@ -162,4 +166,5 @@ Some photos were obtained from www.unsplash.com but most have been web links fro
 online.
 
 ### Acknowledgements
-Many thanks to the CI tutors who were very patient with me asking silly questions.
+Many thanks to the Code Institute team of tutors, special mention to Tim, Samantha and Michael for being 
+extra patient and putting up with my silly questions.
