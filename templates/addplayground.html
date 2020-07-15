@@ -24,11 +24,11 @@
                     <div class="row">
                         <label for="borough_name" class="form-label">Borough</label>
                         <select class="form-control" name="borough_name" id="borough_name">
-                <option disabled selected>Choose a borough</option>
-                {% for borough in boroughs %}
-                  <option value="{{ borough.borough_name }} "> {{ borough.borough_name }} </option>
-                {% endfor %}
-              </select>
+                            <option disabled selected>Choose a borough</option>
+                                {% for borough in boroughs %}
+                            <option value="{{ borough.borough_name }} "> {{ borough.borough_name }} </option>
+                                {% endfor %}
+                        </select>
                     </div>
                 </div>
             </div>
