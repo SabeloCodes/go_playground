@@ -11,7 +11,7 @@ Flask-PyMongo==2.3.0
 ikp3db==1.4.1
 itsdangerous==1.1.0
 jedi==0.11.1
-Jinja2==2.10.3
+Jinja2==2.11.3
 jmespath==0.9.4
 parso==0.1.1
 pbr==5.4.3
